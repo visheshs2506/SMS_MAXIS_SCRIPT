@@ -1,0 +1,65 @@
+--- Monitoring Report (2026-02-16) ---
+Date: 2026-02-16 20:08:17.201989
+----------------------------------------
+Task/Process                            | Actual Result       | Expected Result               
+----------------------------------------------------------------------------------------------
+JAR Status for SMPP            | 3/3         | Expected: 3/3
+JARs started today             | 0/3         | Expected: 0/3
+CFG Status                              | 10/10               | Expected: 10/10               
+CFG Started Today                       | 1/10                | Expected: 0/10                
+Storage for /                  | 11.82%       | Not Exceed: 70%
+Storage for /data              | 40.40%       | Not Exceed: 70%
+Storage for /tmp               | 0.00%       | Not Exceed: 70%
+Storage for /var               | 2.67%       | Not Exceed: 70%
+Storage for /home              | 6.44%       | Not Exceed: 70%
+Storage for /backup            | 41.34%       | Not Exceed: 70%
+Storage for /run               | 3.43%       | Not Exceed: 70%
+Memory Usage                   | 12.90%      | Not Exceed: 70%
+CPU "id" Usage                 | 93.0        | Not Below: 20
+TCAP connected                 | 10/10       | Expected: 10/10
+M3UA connected                 | 4/4         | Expected: 4/4
+LINK connected                 | 2/2         | Expected: 2/2
+SMPP CDR last 3 file created   | 2/3         | Expected: 3/3
+SMPP CDR last 3 file writing   | 3/3         | Expected: 3/3
+SS7 CDR last 3 file created    | 2/3         | Expected: 3/3
+SS7 CDR last 3 file writing    | 3/3         | Expected: 3/3
+AAG                       | writing      | writing
+Nilai                     | writing      | writing
+Rawang                    | writing      | writing
+armour_1001__1-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__2-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__3-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__4-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__5-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__6-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__7-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__8-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__9-Trace-2026-02-16.log | Missing File        | Expected Today
+armour_1001__10-Trace-2026-02-16.log | Missing File        | Expected Today
+SS7 Trace Files Written             | 0/10              | Expected: 10/10
+SMPP AAG  ERROR                | 0             | Not Exceed: 50
+SMPP Nilai  ERROR              | 0             | Not Exceed: 50
+SMPP Rawang  ERROR             | 0             | Not Exceed: 50
+SS7 Trace File 1               | File Missing | Skipped
+SS7 Trace File 2               | File Missing | Skipped
+SS7 Trace File 3               | File Missing | Skipped
+SS7 Trace File 4               | File Missing | Skipped
+SS7 Trace File 5               | File Missing | Skipped
+SS7 Trace File 6               | File Missing | Skipped
+SS7 Trace File 7               | File Missing | Skipped
+SS7 Trace File 8               | File Missing | Skipped
+SS7 Trace File 9               | File Missing | Skipped
+SS7 Trace File 10              | File Missing | Skipped
+Haproxy                        | running       | running
+Keepalived                     | running       | running
+Java                           | running       | running
+Tomcat                         | running       | running
+Kafka                          | running       | running
+Zookeeper                      | running       | running
+SRI Request MWA                     | Current: 1322626  | Previous: 0 (Increased)
+SRI Request RE                      | Current: 1323081  | Previous: 0 (Increased)
+MT Forward Message Responce         | Current: 334210   | Previous: 0 (Increased)
+MO Messages                         | Current: 11526    | Previous: 0 (Increased)
+MO Messages Response                | Current: 308      | Previous: 0 (Increased)
+MT Messages                         | Current: 442278   | Previous: 0 (Increased)
+SRI Message response                | Current: 997841   | Previous: 0 (Increased)

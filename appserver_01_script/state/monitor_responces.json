@@ -1,0 +1,3186 @@
+{
+  "counts": {
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127323,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127663,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127858,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127841,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127407,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127873,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127368,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 127194,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 128013,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Payload: message_type 5": {
+      "count": 128017,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127349,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127689,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127888,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127880,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127442,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127913,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127418,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 127235,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 128052,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Armour Response: message_type 5": {
+      "count": 128059,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 32099,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 32018,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 31947,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 32189,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 32552,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 31842,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 32323,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 32213,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 31989,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Payload: message_type 4": {
+      "count": 31928,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1131,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1109,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1119,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1153,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1101,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1087,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1108,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1109,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1047,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Payload: message_type 3": {
+      "count": 1113,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 32,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 37,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 22,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 33,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 38,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 24,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 19,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 26,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 37,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::message_type 3 Response": {
+      "count": 27,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42747,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42508,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42300,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42349,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42908,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42280,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42850,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42700,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42242,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Armour Response: message_type 2": {
+      "count": 42381,
+      "time": 1771240621
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96152,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96349,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96420,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96640,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96663,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96667,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96526,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96089,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96890,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Armour Response: message_type 1": {
+      "count": 96808,
+      "time": 1771241240
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153206,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153590,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153689,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153751,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153326,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153763,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153206,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 152995,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 153820,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::SRI Request MWA": {
+      "count": 154024,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153225,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153609,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153714,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153777,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153353,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153789,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153237,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153024,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 153855,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::SRI Request RE": {
+      "count": 154063,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 37886,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 37860,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 37845,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 38215,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 38453,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 37811,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 38239,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 38237,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 37944,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MT Forward Message Responce": {
+      "count": 37790,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MO Messages": {
+      "count": 1449,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MO Messages": {
+      "count": 1440,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MO Messages": {
+      "count": 1465,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MO Messages": {
+      "count": 1472,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MO Messages": {
+      "count": 1449,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MO Messages": {
+      "count": 1383,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MO Messages": {
+      "count": 1460,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MO Messages": {
+      "count": 1439,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MO Messages": {
+      "count": 1374,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MO Messages": {
+      "count": 1487,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 39,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 44,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 28,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 40,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 47,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 34,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 31,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 30,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 40,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MO Messages Response": {
+      "count": 35,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MT Messages": {
+      "count": 50586,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MT Messages": {
+      "count": 50266,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MT Messages": {
+      "count": 50169,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MT Messages": {
+      "count": 50323,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MT Messages": {
+      "count": 50724,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MT Messages": {
+      "count": 50136,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MT Messages": {
+      "count": 50662,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MT Messages": {
+      "count": 50613,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MT Messages": {
+      "count": 50143,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MT Messages": {
+      "count": 50107,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::SRI Message response": {
+      "count": 114655,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::SRI Message response": {
+      "count": 114643,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::SRI Message response": {
+      "count": 114822,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::SRI Message response": {
+      "count": 115104,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::SRI Message response": {
+      "count": 114912,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::SRI Message response": {
+      "count": 115063,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::SRI Message response": {
+      "count": 114734,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::SRI Message response": {
+      "count": 114402,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::SRI Message response": {
+      "count": 115283,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::SRI Message response": {
+      "count": 115254,
+      "time": 1771257444
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 108097,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 107856,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 108057,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 108034,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 107868,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 108236,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 108164,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 107903,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 108368,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::SRI Request MWA": {
+      "count": 107854,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 108110,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 107869,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 108070,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 108050,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 107883,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 108251,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 108187,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 107920,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 108389,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::SRI Request RE": {
+      "count": 107873,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20701,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20559,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20531,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20695,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20384,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20509,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20457,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20628,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20192,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MT Forward Message Responce": {
+      "count": 20807,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MO Messages": {
+      "count": 1339,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MO Messages": {
+      "count": 1432,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MO Messages": {
+      "count": 1343,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MO Messages": {
+      "count": 1418,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MO Messages": {
+      "count": 1425,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MO Messages": {
+      "count": 1396,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MO Messages": {
+      "count": 1373,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MO Messages": {
+      "count": 1399,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MO Messages": {
+      "count": 1378,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MO Messages": {
+      "count": 1394,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 41,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 48,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 41,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 46,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 44,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 42,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 44,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 47,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 40,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MO Messages Response": {
+      "count": 40,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MT Messages": {
+      "count": 28133,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MT Messages": {
+      "count": 28037,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MT Messages": {
+      "count": 28104,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MT Messages": {
+      "count": 27979,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MT Messages": {
+      "count": 27997,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MT Messages": {
+      "count": 27938,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MT Messages": {
+      "count": 27929,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MT Messages": {
+      "count": 28045,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MT Messages": {
+      "count": 27613,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MT Messages": {
+      "count": 28208,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::SRI Message response": {
+      "count": 87961,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88186,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88100,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88235,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88011,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88235,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88332,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88133,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::SRI Message response": {
+      "count": 88297,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::SRI Message response": {
+      "count": 87957,
+      "time": 1771342940
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94333,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 95044,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94753,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94841,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94703,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94835,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94399,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94504,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94429,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::SRI Request MWA": {
+      "count": 94808,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94363,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 95075,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94782,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94865,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94733,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94865,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94434,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94541,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94462,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::SRI Request RE": {
+      "count": 94848,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 15133,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14640,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14849,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14831,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14855,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14857,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14772,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14886,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14754,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MT Forward Message Responce": {
+      "count": 14765,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MO Messages": {
+      "count": 1311,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MO Messages": {
+      "count": 1382,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MO Messages": {
+      "count": 1348,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MO Messages": {
+      "count": 1355,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MO Messages": {
+      "count": 1431,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MO Messages": {
+      "count": 1314,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MO Messages": {
+      "count": 1404,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MO Messages": {
+      "count": 1309,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MO Messages": {
+      "count": 1401,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MO Messages": {
+      "count": 1402,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 39,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 25,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 24,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 22,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 37,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 24,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 25,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 28,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 39,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MO Messages Response": {
+      "count": 37,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MT Messages": {
+      "count": 22128,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MT Messages": {
+      "count": 21375,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MT Messages": {
+      "count": 21668,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MT Messages": {
+      "count": 21616,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MT Messages": {
+      "count": 21748,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MT Messages": {
+      "count": 21614,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MT Messages": {
+      "count": 21880,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MT Messages": {
+      "count": 21641,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MT Messages": {
+      "count": 21712,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MT Messages": {
+      "count": 21600,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::SRI Message response": {
+      "count": 82692,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::SRI Message response": {
+      "count": 83313,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::SRI Message response": {
+      "count": 83067,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::SRI Message response": {
+      "count": 83294,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::SRI Message response": {
+      "count": 83058,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::SRI Message response": {
+      "count": 83169,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::SRI Message response": {
+      "count": 82752,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::SRI Message response": {
+      "count": 82847,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::SRI Message response": {
+      "count": 82755,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::SRI Message response": {
+      "count": 83095,
+      "time": 1771429085
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::SRI Message response": {
+      "count": 85897,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::SRI Message response": {
+      "count": 85997,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::SRI Message response": {
+      "count": 85934,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::SRI Message response": {
+      "count": 86002,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::SRI Message response": {
+      "count": 85587,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::SRI Message response": {
+      "count": 86036,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::SRI Message response": {
+      "count": 86051,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::SRI Message response": {
+      "count": 85432,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::SRI Message response": {
+      "count": 85903,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::SRI Message response": {
+      "count": 86241,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102372,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102295,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102393,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102279,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 101936,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102561,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102354,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 101991,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102266,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::SRI Request MWA": {
+      "count": 102537,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102383,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102309,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102407,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102295,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 101953,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102580,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102367,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102009,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102287,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::SRI Request RE": {
+      "count": 102557,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16671,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16377,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16608,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16795,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16838,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16616,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16710,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16929,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16742,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MT Forward Message Responce": {
+      "count": 16656,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MO Messages": {
+      "count": 1163,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MO Messages": {
+      "count": 1193,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MO Messages": {
+      "count": 1190,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MO Messages": {
+      "count": 1165,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MO Messages": {
+      "count": 1230,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MO Messages": {
+      "count": 1131,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MO Messages": {
+      "count": 1141,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MO Messages": {
+      "count": 1143,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MO Messages": {
+      "count": 1107,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MO Messages": {
+      "count": 1207,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 38,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 37,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 44,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 41,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 40,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 36,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 27,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 42,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 30,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MO Messages Response": {
+      "count": 44,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MT Messages": {
+      "count": 23481,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MT Messages": {
+      "count": 23209,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MT Messages": {
+      "count": 23337,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MT Messages": {
+      "count": 23659,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MT Messages": {
+      "count": 23618,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MT Messages": {
+      "count": 23396,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MT Messages": {
+      "count": 23490,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MT Messages": {
+      "count": 23513,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MT Messages": {
+      "count": 23379,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MT Messages": {
+      "count": 23345,
+      "time": 1771515461
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21345,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21721,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21706,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21572,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21429,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21499,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21546,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21499,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21641,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MT Forward Message Responce": {
+      "count": 21577,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MO Messages": {
+      "count": 1292,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MO Messages": {
+      "count": 1264,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MO Messages": {
+      "count": 1333,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MO Messages": {
+      "count": 1345,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MO Messages": {
+      "count": 1311,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MO Messages": {
+      "count": 1315,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MO Messages": {
+      "count": 1274,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MO Messages": {
+      "count": 1310,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MO Messages": {
+      "count": 1335,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MO Messages": {
+      "count": 1321,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 122,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 95,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 114,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 124,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 98,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 108,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 107,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 107,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 99,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MO Messages Response": {
+      "count": 101,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MT Messages": {
+      "count": 38499,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MT Messages": {
+      "count": 38778,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MT Messages": {
+      "count": 38634,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MT Messages": {
+      "count": 38846,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MT Messages": {
+      "count": 38752,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MT Messages": {
+      "count": 38559,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MT Messages": {
+      "count": 38820,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MT Messages": {
+      "count": 38687,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MT Messages": {
+      "count": 38792,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MT Messages": {
+      "count": 38741,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::SRI Message response": {
+      "count": 102383,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::SRI Message response": {
+      "count": 102209,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::SRI Message response": {
+      "count": 101750,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::SRI Message response": {
+      "count": 101635,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::SRI Message response": {
+      "count": 101795,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::SRI Message response": {
+      "count": 102089,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::SRI Message response": {
+      "count": 101700,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::SRI Message response": {
+      "count": 102129,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::SRI Message response": {
+      "count": 101924,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::SRI Message response": {
+      "count": 101720,
+      "time": 1771601968
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120997,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120920,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120638,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120475,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120478,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120881,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120522,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120711,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120516,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::SRI Request MWA": {
+      "count": 120610,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 121019,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120940,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120665,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120505,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120504,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120908,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120548,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120742,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120545,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::SRI Request RE": {
+      "count": 120641,
+      "time": 1771602119
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 25792,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 25773,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 25818,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 25758,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 26048,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 25926,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 26035,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 25822,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 26025,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MT Forward Message Responce": {
+      "count": 25695,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MO Messages": {
+      "count": 65604,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MO Messages": {
+      "count": 65178,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MO Messages": {
+      "count": 65072,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MO Messages": {
+      "count": 65265,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MO Messages": {
+      "count": 65657,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MO Messages": {
+      "count": 65756,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MO Messages": {
+      "count": 65542,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MO Messages": {
+      "count": 65288,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MO Messages": {
+      "count": 65968,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MO Messages": {
+      "count": 65606,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35330,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 34938,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 34964,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35079,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35409,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35371,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35288,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35234,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35605,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MO Messages Response": {
+      "count": 35468,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MT Messages": {
+      "count": 41689,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MT Messages": {
+      "count": 42079,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MT Messages": {
+      "count": 41921,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MT Messages": {
+      "count": 41774,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MT Messages": {
+      "count": 41962,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MT Messages": {
+      "count": 41950,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MT Messages": {
+      "count": 42181,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MT Messages": {
+      "count": 41774,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MT Messages": {
+      "count": 41974,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MT Messages": {
+      "count": 41651,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97598,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97855,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97781,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97779,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97610,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97315,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97474,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97833,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97024,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::SRI Message response": {
+      "count": 97453,
+      "time": 1771688643
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132468,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132586,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132652,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132874,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132350,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132311,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132373,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132696,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 131837,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::SRI Request MWA": {
+      "count": 132585,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132489,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132602,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132675,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132899,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132384,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132334,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132399,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132723,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 131868,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::SRI Request RE": {
+      "count": 132606,
+      "time": 1771688821
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33690,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33943,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33481,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 34079,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33854,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33504,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33741,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33948,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33441,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MO Messages Response": {
+      "count": 33618,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MT Messages": {
+      "count": 22168,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MT Messages": {
+      "count": 22236,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MT Messages": {
+      "count": 22189,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MT Messages": {
+      "count": 22217,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MT Messages": {
+      "count": 22301,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MT Messages": {
+      "count": 22147,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MT Messages": {
+      "count": 22151,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MT Messages": {
+      "count": 22145,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MT Messages": {
+      "count": 22068,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MT Messages": {
+      "count": 21885,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::SRI Message response": {
+      "count": 86690,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::SRI Message response": {
+      "count": 86803,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::SRI Message response": {
+      "count": 86671,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::SRI Message response": {
+      "count": 86375,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::SRI Message response": {
+      "count": 86908,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::SRI Message response": {
+      "count": 87297,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::SRI Message response": {
+      "count": 86960,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::SRI Message response": {
+      "count": 86812,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::SRI Message response": {
+      "count": 87321,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::SRI Message response": {
+      "count": 87386,
+      "time": 1771774590
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97111,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97087,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 96843,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 96717,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97222,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97489,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97232,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97126,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97545,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::SRI Request MWA": {
+      "count": 97748,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97120,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97097,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 96853,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 96730,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97238,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97506,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97249,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97144,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97561,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::SRI Request RE": {
+      "count": 97764,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12726,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12654,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12874,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12700,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12794,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12765,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12730,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12683,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12507,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MT Forward Message Responce": {
+      "count": 12599,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MO Messages": {
+      "count": 61768,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MO Messages": {
+      "count": 62001,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MO Messages": {
+      "count": 61959,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MO Messages": {
+      "count": 62278,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MO Messages": {
+      "count": 61596,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MO Messages": {
+      "count": 61635,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MO Messages": {
+      "count": 61888,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MO Messages": {
+      "count": 62045,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MO Messages": {
+      "count": 61709,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MO Messages": {
+      "count": 61713,
+      "time": 1771774886
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::SRI Message response": {
+      "count": 73832,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::SRI Message response": {
+      "count": 73572,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::SRI Message response": {
+      "count": 73622,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::SRI Message response": {
+      "count": 73688,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::SRI Message response": {
+      "count": 74006,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::SRI Message response": {
+      "count": 74068,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::SRI Message response": {
+      "count": 73703,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::SRI Message response": {
+      "count": 73736,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::SRI Message response": {
+      "count": 74107,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::SRI Message response": {
+      "count": 73655,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88304,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88101,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88205,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88088,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88403,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88452,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88156,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88175,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88701,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::SRI Request MWA": {
+      "count": 88151,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88323,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88124,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88234,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88114,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88432,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88479,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88186,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88219,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88736,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::SRI Request RE": {
+      "count": 88195,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14842,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14885,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14764,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14931,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14836,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14634,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 15075,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14903,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14465,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MT Forward Message Responce": {
+      "count": 14836,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MO Messages": {
+      "count": 57519,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MO Messages": {
+      "count": 57428,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MO Messages": {
+      "count": 57897,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MO Messages": {
+      "count": 57859,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MO Messages": {
+      "count": 57520,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MO Messages": {
+      "count": 57978,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MO Messages": {
+      "count": 57599,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MO Messages": {
+      "count": 57657,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MO Messages": {
+      "count": 57874,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MO Messages": {
+      "count": 57728,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36046,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36111,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36438,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36440,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 35829,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36404,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36306,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36240,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36269,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MO Messages Response": {
+      "count": 36248,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MT Messages": {
+      "count": 23873,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MT Messages": {
+      "count": 24095,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MT Messages": {
+      "count": 23832,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MT Messages": {
+      "count": 23875,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MT Messages": {
+      "count": 23940,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MT Messages": {
+      "count": 23610,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MT Messages": {
+      "count": 24153,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MT Messages": {
+      "count": 24051,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MT Messages": {
+      "count": 23489,
+      "time": 1771838850
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MT Messages": {
+      "count": 23900,
+      "time": 1771838850
+    }
+  },
+  "alerts": {
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::message_type 3 Response": 1771240621,
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MO Messages Response": 1771252628,
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MO Messages Response": 1771253988,
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MO Messages Response": 1771255358,
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MO Messages Response": 1771256051,
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MO Messages Response": 1771256051,
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MO Messages Response": 1771256747,
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MO Messages Response": 1771257444,
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MO Messages Response": 1771257444,
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MO Messages Response": 1771257444,
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MO Messages Response": 1771342940,
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MO Messages Response": 1771421641,
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MO Messages Response": 1771427201,
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MO Messages Response": 1771427201,
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MO Messages Response": 1771429085,
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MO Messages Response": 1771429085,
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MO Messages Response": 1771513630,
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MO Messages Response": 1771515461,
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MO Messages Response": 1771515461,
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MO Messages Response": 1771515461,
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MO Messages Response": 1771515461,
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MO Messages Response": 1771515461,
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MO Messages Response": 1771598128,
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MO Messages Response": 1771598128,
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MO Messages Response": 1771598128,
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MO Messages Response": 1771598128,
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MO Messages Response": 1771601968,
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MO Messages Response": 1771601968
+  },
+  "status": {
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Payload: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Armour Response: message_type 5": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Payload: message_type 4": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Payload: message_type 3": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::message_type 3 Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::message_type 3 Response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Armour Response: message_type 2": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::Armour Response: message_type 1": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MO Messages Response": "FAIL",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::SRI Message response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::SRI Request MWA": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::SRI Request RE": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MT Forward Message Responce": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MO Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MO Messages Response": "OK",
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log::MT Messages": "OK",
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log::MT Messages": "OK"
+  }
+}

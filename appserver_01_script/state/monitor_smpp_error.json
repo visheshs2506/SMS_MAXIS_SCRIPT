@@ -1,0 +1,17 @@
+{
+  "AAG": {
+    "status": "OK",
+    "last_alert_time": null,
+    "error_count": 13
+  },
+  "Nilai": {
+    "status": "OK",
+    "last_alert_time": null,
+    "error_count": 0
+  },
+  "Rawang": {
+    "status": "OK",
+    "last_alert_time": null,
+    "error_count": 0
+  }
+}

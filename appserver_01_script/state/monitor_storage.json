@@ -1,0 +1,30 @@
+{
+  "/": {
+    "status": "OK",
+    "last_alert_time": null
+  },
+  "/data": {
+    "status": "OK",
+    "last_alert_time": null
+  },
+  "/tmp": {
+    "status": "OK",
+    "last_alert_time": null
+  },
+  "/var": {
+    "status": "OK",
+    "last_alert_time": null
+  },
+  "/home": {
+    "status": "OK",
+    "last_alert_time": null
+  },
+  "/backup": {
+    "status": "OK",
+    "last_alert_time": null
+  },
+  "/run": {
+    "status": "OK",
+    "last_alert_time": null
+  }
+}

@@ -1,0 +1,55 @@
+--- Monitoring Report (2026-02-19) ---
+Date: 2026-02-19 13:30:01.466064
+----------------------------------------
+Task/Process                            | Actual Result       | Expected Result               
+----------------------------------------------------------------------------------------------
+JAR Status for SMPP            | 3/3         | Expected: 3/3
+JARs started today             | 0/3         | Expected: 0/3
+CFG Status                              | 0/10                | Expected: 10/10               
+CFG Started Today                       | 0/10                | Expected: 0/10                
+Storage for /                  | 11.90%       | Not Exceed: 70%
+Storage for /data              | 37.74%       | Not Exceed: 70%
+Storage for /tmp               | 0.00%       | Not Exceed: 70%
+Storage for /var               | 2.68%       | Not Exceed: 70%
+Storage for /home              | 6.44%       | Not Exceed: 70%
+Storage for /backup            | 36.85%       | Not Exceed: 70%
+Storage for /run               | 3.55%       | Not Exceed: 70%
+Memory Usage                   | 12.80%      | Not Exceed: 70%
+CPU "id" Usage                 | 91.2        | Not Below: 20
+TCAP connected                 | 10/10       | Expected: 10/10
+M3UA connected                 | 4/4         | Expected: 4/4
+LINK connected                 | 2/2         | Expected: 2/2
+SMPP CDR last 3 file created   | 3/3         | Expected: 3/3
+SMPP CDR last 3 file writing   | 3/3         | Expected: 3/3
+SS7 CDR last 3 file created    | 3/3         | Expected: 3/3
+SS7 CDR last 3 file writing    | 3/3         | Expected: 3/3
+AAG                       | writing      | writing
+Nilai                     | writing      | writing
+Rawang                    | writing      | writing
+SS7 Trace Files Written             | 10/10              | Expected: 10/10
+SMPP AAG  ERROR                | 10            | Not Exceed: 50
+SMPP Nilai  ERROR              | 0             | Not Exceed: 50
+SMPP Rawang  ERROR             | 0             | Not Exceed: 50
+SS7 Trace File 1               | 0           | Not Exceed: 2000
+SS7 Trace File 2               | 0           | Not Exceed: 2000
+SS7 Trace File 3               | 0           | Not Exceed: 2000
+SS7 Trace File 4               | 0           | Not Exceed: 2000
+SS7 Trace File 5               | 5           | Not Exceed: 2000
+SS7 Trace File 6               | 0           | Not Exceed: 2000
+SS7 Trace File 7               | 0           | Not Exceed: 2000
+SS7 Trace File 8               | 0           | Not Exceed: 2000
+SS7 Trace File 9               | 0           | Not Exceed: 2000
+SS7 Trace File 10              | 0           | Not Exceed: 2000
+Haproxy                        | running       | running
+Keepalived                     | running       | running
+Java                           | running       | running
+Tomcat                         | running       | running
+Kafka                          | running       | running
+Zookeeper                      | running       | running
+SRI Request MWA                     | Current: 506379   | Previous: 482494 (Increased)
+SRI Request RE                      | Current: 506475   | Previous: 482613 (Increased)
+MT Forward Message Responce         | Current: 73605    | Previous: 69864 (Increased)
+MO Messages                         | Current: 5851     | Previous: 5602 (Increased)
+MO Messages Response                | Current: 174      | Previous: 162 (Increased)
+MT Messages                         | Current: 97183    | Previous: 92121 (Increased)
+SRI Message response                | Current: 436428   | Previous: 415751 (Increased)

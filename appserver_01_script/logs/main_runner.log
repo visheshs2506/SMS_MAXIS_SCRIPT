@@ -1,0 +1,149 @@
+2026-02-16 21:30:08,012 [INFO] Main runner started.
+2026-02-16 21:30:08,014 [INFO] Started monitor_cpu with PID 2685732
+2026-02-16 21:30:08,016 [INFO] Started monitor_cfg with PID 2685733
+2026-02-16 21:30:08,018 [INFO] Started monitor_ha_proxy_keeplived with PID 2685734
+2026-02-16 21:30:08,019 [INFO] Started monitor_jar with PID 2685735
+2026-02-16 21:30:08,021 [INFO] Started monitor_responces with PID 2685736
+2026-02-16 21:30:08,023 [INFO] Started monitor_services with PID 2685737
+2026-02-16 21:30:08,024 [INFO] Started monitor_smpp_cdr with PID 2685738
+2026-02-16 21:30:08,026 [INFO] Started monitor_smpp_error with PID 2685739
+2026-02-16 21:30:08,028 [INFO] Started monitor_ss7_cdr with PID 2685740
+2026-02-16 21:30:08,029 [INFO] Started monitor_storage with PID 2685741
+2026-02-16 21:30:08,031 [INFO] Started monitor_trace with PID 2685742
+2026-02-16 21:31:26,598 [INFO] Caught signal 2. Shutting down.
+2026-02-16 21:31:26,599 [INFO] Stopping all monitor scripts...
+2026-02-16 21:31:26,599 [INFO] Killed monitor_cpu (PID 2685732)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_cfg (PID 2685733)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_ha_proxy_keeplived (PID 2685734)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_jar (PID 2685735)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_responces (PID 2685736)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_services (PID 2685737)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_smpp_cdr (PID 2685738)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_smpp_error (PID 2685739)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_ss7_cdr (PID 2685740)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_storage (PID 2685741)
+2026-02-16 21:31:26,599 [INFO] Killed monitor_trace (PID 2685742)
+2026-02-16 21:33:31,733 [INFO] Main runner started.
+2026-02-16 21:33:31,735 [INFO] Started monitor_cpu with PID 2694536
+2026-02-16 21:33:31,737 [INFO] Started monitor_cfg with PID 2694537
+2026-02-16 21:33:31,739 [INFO] Started monitor_ha_proxy_keeplived with PID 2694538
+2026-02-16 21:33:31,740 [INFO] Started monitor_jar with PID 2694539
+2026-02-16 21:33:31,742 [INFO] Started monitor_responces with PID 2694540
+2026-02-16 21:33:31,743 [INFO] Started monitor_services with PID 2694541
+2026-02-16 21:33:31,745 [INFO] Started monitor_smpp_cdr with PID 2694542
+2026-02-16 21:33:31,747 [INFO] Started monitor_smpp_error with PID 2694543
+2026-02-16 21:33:31,749 [INFO] Started monitor_ss7_cdr with PID 2694544
+2026-02-16 21:33:31,750 [INFO] Started monitor_storage with PID 2694545
+2026-02-16 21:33:31,752 [INFO] Started monitor_trace with PID 2694546
+2026-02-16 21:35:18,588 [WARNING] Old PID file found but process not running. Cleaning.
+2026-02-16 21:35:18,588 [INFO] Main runner started.
+2026-02-16 21:35:18,590 [INFO] Started monitor_cpu with PID 2699150
+2026-02-16 21:35:18,592 [INFO] Started monitor_cfg with PID 2699151
+2026-02-16 21:35:18,594 [INFO] Started monitor_ha_proxy_keeplived with PID 2699152
+2026-02-16 21:35:18,596 [INFO] Started monitor_jar with PID 2699153
+2026-02-16 21:35:18,598 [INFO] Started monitor_responces with PID 2699154
+2026-02-16 21:35:18,600 [INFO] Started monitor_services with PID 2699155
+2026-02-16 21:35:18,602 [INFO] Started monitor_smpp_cdr with PID 2699156
+2026-02-16 21:35:18,604 [INFO] Started monitor_smpp_error with PID 2699157
+2026-02-16 21:35:18,605 [INFO] Started monitor_ss7_cdr with PID 2699158
+2026-02-16 21:35:18,607 [INFO] Started monitor_storage with PID 2699159
+2026-02-16 21:35:18,609 [INFO] Started monitor_trace with PID 2699160
+2026-02-16 21:35:20,334 [INFO] Caught signal 2. Shutting down.
+2026-02-16 21:35:20,334 [INFO] Stopping all monitor scripts...
+2026-02-16 21:35:20,334 [INFO] Killed monitor_cpu (PID 2699150)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_cfg (PID 2699151)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_ha_proxy_keeplived (PID 2699152)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_jar (PID 2699153)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_responces (PID 2699154)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_services (PID 2699155)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_smpp_cdr (PID 2699156)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_smpp_error (PID 2699157)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_ss7_cdr (PID 2699158)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_storage (PID 2699159)
+2026-02-16 21:35:20,334 [INFO] Killed monitor_trace (PID 2699160)
+2026-02-16 21:41:49,650 [INFO] Checking for existing monitor processes...
+2026-02-16 21:41:49,678 [WARNING] Killed orphan monitor monitor_cpu PID 2694536
+2026-02-16 21:41:49,704 [WARNING] Killed orphan monitor monitor_cfg PID 2694537
+2026-02-16 21:41:49,728 [WARNING] Killed orphan monitor monitor_ha_proxy_keeplived PID 2694538
+2026-02-16 21:41:49,753 [WARNING] Killed orphan monitor monitor_jar PID 2694539
+2026-02-16 21:41:49,777 [WARNING] Killed orphan monitor monitor_responces PID 2694540
+2026-02-16 21:41:49,802 [WARNING] Killed orphan monitor monitor_services PID 2694541
+2026-02-16 21:41:49,827 [WARNING] Killed orphan monitor monitor_smpp_cdr PID 2694542
+2026-02-16 21:41:49,852 [WARNING] Killed orphan monitor monitor_smpp_error PID 2694543
+2026-02-16 21:41:49,879 [WARNING] Killed orphan monitor monitor_ss7_cdr PID 2694544
+2026-02-16 21:41:49,903 [WARNING] Killed orphan monitor monitor_storage PID 2694545
+2026-02-16 21:41:49,928 [WARNING] Killed orphan monitor monitor_trace PID 2694546
+2026-02-16 21:41:49,928 [INFO] Main runner started.
+2026-02-16 21:41:49,933 [INFO] Started monitor_cpu (PID 2717830)
+2026-02-16 21:41:49,938 [INFO] Started monitor_cfg (PID 2717832)
+2026-02-16 21:41:49,944 [INFO] Started monitor_ha_proxy_keeplived (PID 2717834)
+2026-02-16 21:41:49,949 [INFO] Started monitor_jar (PID 2717836)
+2026-02-16 21:41:49,954 [INFO] Started monitor_responces (PID 2717838)
+2026-02-16 21:41:49,959 [INFO] Started monitor_services (PID 2717840)
+2026-02-16 21:41:49,964 [INFO] Started monitor_smpp_cdr (PID 2717842)
+2026-02-16 21:41:49,969 [INFO] Started monitor_smpp_error (PID 2717844)
+2026-02-16 21:41:49,975 [INFO] Started monitor_ss7_cdr (PID 2717846)
+2026-02-16 21:41:49,979 [INFO] Started monitor_storage (PID 2717848)
+2026-02-16 21:41:49,984 [INFO] Started monitor_trace (PID 2717850)
+2026-02-16 21:41:54,653 [INFO] Received signal 2. Shutting down.
+2026-02-16 21:41:54,653 [INFO] Stopping all monitor scripts...
+2026-02-16 21:41:54,653 [INFO] Killed monitor_cpu (PID 2717830)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_cfg (PID 2717832)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_ha_proxy_keeplived (PID 2717834)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_jar (PID 2717836)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_responces (PID 2717838)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_services (PID 2717840)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_smpp_cdr (PID 2717842)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_smpp_error (PID 2717844)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_ss7_cdr (PID 2717846)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_storage (PID 2717848)
+2026-02-16 21:41:54,654 [INFO] Killed monitor_trace (PID 2717850)
+2026-02-16 21:42:10,256 [INFO] Checking for existing monitor processes...
+2026-02-16 21:42:10,541 [INFO] Main runner started.
+2026-02-16 21:42:10,546 [INFO] Started monitor_cpu (PID 2718484)
+2026-02-16 21:42:10,551 [INFO] Started monitor_cfg (PID 2718486)
+2026-02-16 21:42:10,557 [INFO] Started monitor_ha_proxy_keeplived (PID 2718488)
+2026-02-16 21:42:10,562 [INFO] Started monitor_jar (PID 2718490)
+2026-02-16 21:42:10,567 [INFO] Started monitor_responces (PID 2718492)
+2026-02-16 21:42:10,572 [INFO] Started monitor_services (PID 2718494)
+2026-02-16 21:42:10,577 [INFO] Started monitor_smpp_cdr (PID 2718496)
+2026-02-16 21:42:10,583 [INFO] Started monitor_smpp_error (PID 2718498)
+2026-02-16 21:42:10,588 [INFO] Started monitor_ss7_cdr (PID 2718500)
+2026-02-16 21:42:10,593 [INFO] Started monitor_storage (PID 2718502)
+2026-02-16 21:42:10,598 [INFO] Started monitor_trace (PID 2718504)
+2026-02-16 22:25:58,764 [WARNING] Stale PID file found. Cleaning.
+2026-02-16 22:25:58,764 [INFO] Checking for existing monitor processes...
+2026-02-16 22:25:59,032 [INFO] Main runner started.
+2026-02-16 22:25:59,038 [INFO] Started monitor_cpu (PID 2831680)
+2026-02-16 22:25:59,042 [INFO] Started monitor_cfg (PID 2831682)
+2026-02-16 22:25:59,047 [INFO] Started monitor_ha_proxy_keeplived (PID 2831684)
+2026-02-16 22:25:59,052 [INFO] Started monitor_jar (PID 2831686)
+2026-02-16 22:25:59,058 [INFO] Started monitor_responces (PID 2831688)
+2026-02-16 22:25:59,063 [INFO] Started monitor_services (PID 2831690)
+2026-02-16 22:25:59,067 [INFO] Started monitor_smpp_cdr (PID 2831692)
+2026-02-16 22:25:59,073 [INFO] Started monitor_smpp_error (PID 2831694)
+2026-02-16 22:25:59,078 [INFO] Started monitor_ss7_cdr (PID 2831696)
+2026-02-16 22:25:59,082 [INFO] Started monitor_storage (PID 2831698)
+2026-02-16 22:25:59,087 [INFO] Started monitor_trace (PID 2831700)
+2026-02-17 15:01:58,714 [WARNING] monitor_smpp_error exited. Restarting...
+2026-02-17 15:01:58,719 [INFO] Started monitor_smpp_error (PID 695389)
+2026-02-17 15:07:59,079 [WARNING] monitor_smpp_error exited. Restarting...
+2026-02-17 15:07:59,085 [INFO] Started monitor_smpp_error (PID 708546)
+2026-02-17 15:54:01,845 [WARNING] monitor_smpp_error exited. Restarting...
+2026-02-17 15:54:01,850 [INFO] Started monitor_smpp_error (PID 814879)
+2026-02-17 16:01:32,285 [WARNING] monitor_trace exited. Restarting...
+2026-02-17 16:01:32,290 [INFO] Started monitor_trace (PID 833198)
+2026-02-18 17:52:29,245 [WARNING] Stale PID file found. Cleaning.
+2026-02-18 17:52:29,245 [INFO] Checking for existing monitor processes...
+2026-02-18 17:52:29,523 [INFO] Main runner started.
+2026-02-18 17:52:29,529 [INFO] Started monitor_cpu (PID 14153)
+2026-02-18 17:52:29,534 [INFO] Started monitor_cfg (PID 14155)
+2026-02-18 17:52:29,539 [INFO] Started monitor_ha_proxy_keeplived (PID 14157)
+2026-02-18 17:52:29,545 [INFO] Started monitor_jar (PID 14159)
+2026-02-18 17:52:29,549 [INFO] Started monitor_responces (PID 14161)
+2026-02-18 17:52:29,554 [INFO] Started monitor_services (PID 14163)
+2026-02-18 17:52:29,559 [INFO] Started monitor_smpp_cdr (PID 14165)
+2026-02-18 17:52:29,564 [INFO] Started monitor_smpp_error (PID 14167)
+2026-02-18 17:52:29,568 [INFO] Started monitor_ss7_cdr (PID 14169)
+2026-02-18 17:52:29,574 [INFO] Started monitor_storage (PID 14171)
+2026-02-18 17:52:29,579 [INFO] Started monitor_trace (PID 14173)

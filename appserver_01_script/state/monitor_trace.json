@@ -1,0 +1,246 @@
+{
+  "status": "OK",
+  "last_alert_time": null,
+  "files": {
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-16.log": {
+      "mtime": 1771257584
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-17.log": {
+      "mtime": 1771343981
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-18.log": {
+      "mtime": 1771430391
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-19.log": {
+      "mtime": 1771516798
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-19.log": {
+      "mtime": 1771516797
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-20.log": {
+      "mtime": 1771603184
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-21.log": {
+      "mtime": 1771689589
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-21.log": {
+      "mtime": 1771689590
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-22.log": {
+      "mtime": 1771775996
+    },
+    "/data/armour/ss7/log/armour_1001_10-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_1-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_3-Trace-2026-02-23.log": {
+      "mtime": 1771839480
+    },
+    "/data/armour/ss7/log/armour_1001_7-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_5-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_4-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_6-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_8-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_9-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    },
+    "/data/armour/ss7/log/armour_1001_2-Trace-2026-02-23.log": {
+      "mtime": 1771839481
+    }
+  }
+}

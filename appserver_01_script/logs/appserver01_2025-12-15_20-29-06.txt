@@ -1,0 +1,56 @@
+--- Monitoring Report (2025-12-15) ---
+Date: 2025-12-15 20:29:06.825687
+----------------------------------------
+Task/Process                            | Actual Result       | Expected Result               
+----------------------------------------------------------------------------------------------
+JAR Status for SMPP            | 0/3         | Expected: 3/3
+JARs started today             | 0/3         | Expected: 0/3
+CFG Status                              | 0/5                 | Expected: 5/5                 
+CFG Started Today                       | 0/5                 | Expected: 0/5                 
+Storage for /                  | 1.56%       | Not Exceed: 70%
+Storage for /data              | 6.33%       | Not Exceed: 70%
+Storage for /tmp               | 7.68%       | Not Exceed: 70%
+Storage for /var               | 7.32%       | Not Exceed: 70%
+Storage for /home              | 0.00%       | Not Exceed: 70%
+Storage for /backup            | 0.70%       | Not Exceed: 70%
+Storage for /run               | 9.92%       | Not Exceed: 70%
+Memory Usage                   | 7.30%      | Not Exceed: 70%
+CPU "id" Usage                 | 97.5        | Not Below: 99.9
+SS7 Connection Status          | No Output     | Check environment/setup
+SMPP CDR last 3 file created   | 0/3         | Expected: 3/3
+SMPP CDR last 3 file writing   | 0/3         | Expected: 3/3
+SS7 CDR last 3 file created    | 0/3         | Expected: 3/3
+SS7 CDR last 3 file writing    | 0/3         | Expected: 3/3
+SMPP 5040                 | not writing  | writing
+SMPP 5118                 | not writing  | writing
+SMPP 2875                 | not writing  | writing
+armour_100_1-Trace-2025-12-15.log   | Missing File        | Expected Today
+armour_100_2-Trace-2025-12-15.log   | Missing File        | Expected Today
+armour_100_3-Trace-2025-12-15.log   | Missing File        | Expected Today
+armour_100_4-Trace-2025-12-15.log   | Missing File        | Expected Today
+armour_100_5-Trace-2025-12-15.log   | Missing File        | Expected Today
+SS7 Trace Files Written             | 0/5               | Expected: 5/5
+SMPP SMPP 5040  ERROR          | 0             | Not Exceed: 50
+SMPP SMPP 5118  ERROR          | 0             | Not Exceed: 50
+SMPP SMPP 2875  ERROR          | 0             | Not Exceed: 50
+SS7 Trace File 1               | File Missing | Skipped
+SS7 Trace File 2               | File Missing | Skipped
+SS7 Trace File 3               | File Missing | Skipped
+SS7 Trace File 4               | File Missing | Skipped
+SS7 Trace File 5               | File Missing | Skipped
+Haproxy                        | running       | running
+Keepalived                     | not running   | running
+PostgreSQL 16                  | running       | running
+Apache NiFi                    | not running   | running
+Java                           | running       | running
+Tomcat                         | running       | running
+Kafka                          | not running   | running
+Apache Superset                | not running   | running
+Zookeeper                      | not running   | running
+Payload: message_type 5             | Current: 0        | Previous: 27392 (Decreased)
+Armour Response: message_type 5     | Current: 0        | Previous: 27399 (Decreased)
+Payload: message_type 4             | Current: 0        | Previous: 19027 (Decreased)
+Payload: message_type 3             | Current: 0        | Previous: 138616 (Decreased)
+message_type 3 Response             | Current: 0        | Previous: 108219 (Decreased)
+Armour Response: message_type 2     | Current: 0        | Previous: 21289 (Decreased)
+Armour Response: message_type 1     | Current: 0        | Previous: 23984 (Decreased)

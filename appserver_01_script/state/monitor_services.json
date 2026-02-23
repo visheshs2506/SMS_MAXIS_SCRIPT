@@ -1,0 +1,37 @@
+{
+  "PostgreSQL 16": {
+    "status": "OK",
+    "last_check_time": 1765799915,
+    "last_alert_time": null
+  },
+  "Apache NiFi": {
+    "status": "FAIL",
+    "last_check_time": 1765799915,
+    "last_alert_time": 1765799915
+  },
+  "Java": {
+    "status": "OK",
+    "last_check_time": 1771839459,
+    "last_alert_time": null
+  },
+  "Tomcat": {
+    "status": "OK",
+    "last_check_time": 1771839459,
+    "last_alert_time": null
+  },
+  "Kafka": {
+    "status": "OK",
+    "last_check_time": 1771839459,
+    "last_alert_time": null
+  },
+  "Apache Superset": {
+    "status": "FAIL",
+    "last_check_time": 1765799915,
+    "last_alert_time": 1765799915
+  },
+  "Zookeeper": {
+    "status": "OK",
+    "last_check_time": 1771839459,
+    "last_alert_time": null
+  }
+}
