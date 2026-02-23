@@ -3,36 +3,30 @@ import os
 import time
 import datetime
 import json
+import glob
+import re
+import psycopg2
 from pathlib import Path
+from multiprocessing import Pool, cpu_count
 
-# Add base directory to sys path
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
 from config_loader import config_loader
 from mail_utils import send_alert
 
 STATUS_OK = "OK"
 STATUS_FAIL = "FAIL"
+VERBOSE = True
 
 
-def log(msg):
-    now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"[{now}] {msg}")
+def log(msg, force=False):
+    global VERBOSE
+    if VERBOSE or force:
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        print(f"[{now}] {msg}")
 
 
 def get_today():
     return datetime.datetime.now().strftime("%Y-%m-%d")
-
-
-def run_grep_count(log_dir, pattern):
-    cmd = f"cd {log_dir} && grep -c '{pattern}' *-Trace-{get_today()}.log"
-    output = os.popen(cmd).read().strip()
-    result = {}
-    for line in output.splitlines():
-        if ":" in line:
-            filename, count = line.split(":")
-            result[os.path.join(log_dir, filename)] = int(count)
-    return result
 
 
 def load_state(state_file):
@@ -42,11 +36,7 @@ def load_state(state_file):
                 return json.load(f)
         except Exception:
             pass
-    return {
-        "counts": {},
-        "alerts": {},
-        "status": {}
-    }
+    return {"counts": {}, "alerts": {}, "status": {}}
 
 
 def save_state(state_file, state):
@@ -55,18 +45,107 @@ def save_state(state_file, state):
         json.dump(state, f, indent=2)
 
 
+# -------- SS7 TRAFFIC CHECK --------
+def is_ss7_traffic_active(config):
+    try:
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7")
+
+        if not traffic_conf:
+            print("[ERROR] traffic_monitor.ss7 missing in config.yaml")
+            return False
+
+        conn = psycopg2.connect(
+            host=traffic_conf["db_host"],
+            port=traffic_conf["db_port"],
+            dbname=traffic_conf["db_name"],
+            user=traffic_conf["db_user"],
+            password=traffic_conf["db_password"],
+            connect_timeout=5
+        )
+
+        query = f"""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX({traffic_conf['timestamp_column']})))
+            FROM {traffic_conf['table']};
+        """
+
+        with conn.cursor() as cur:
+            cur.execute(query)
+            result = cur.fetchone()
+
+        conn.close()
+
+        if not result or result[0] is None:
+            print("[INFO] No SS7 records found in DB.")
+            return False
+
+        seconds_diff = result[0]
+        threshold = traffic_conf["inactivity_threshold_seconds"]
+
+        if seconds_diff <= threshold:
+            return True
+        else:
+            print(f"[INFO] SS7 traffic inactive (last record {int(seconds_diff)} seconds ago).")
+            return False
+
+    except Exception as e:
+        print(f"[ERROR] SS7 traffic check failed: {e}")
+        return False
+
+
+# -------- MULTIPROCESS WORKER --------
+def process_pattern(args):
+
+    pattern_conf, log_dir, filename_prefix, shared_counts = args
+
+    label = pattern_conf["label"]
+    grep = pattern_conf["grep"]
+
+    today = get_today()
+    file_pattern = f"{filename_prefix}*-Trace-{today}.log"
+    files = glob.glob(os.path.join(log_dir, file_pattern))
+
+    regex = re.compile(grep)
+    local_counts = {}
+
+    for file in files:
+
+        offset_key = f"{file}::{label}::offset"
+        offset = shared_counts.get(offset_key, 0)
+
+        try:
+            with open(file, "r", errors="ignore") as f:
+
+                f.seek(0, os.SEEK_END)
+                size = f.tell()
+
+                if offset > size:
+                    offset = 0
+
+                f.seek(offset)
+                new_data = f.read()
+                new_offset = f.tell()
+
+        except Exception:
+            continue
+
+        count = len(regex.findall(new_data))
+        local_counts[file] = (count, new_offset)
+
+    return (label, local_counts)
+
+
+# -------- ALERT MAIL --------
 def send_alert_html(failed, server_name):
     subject = f"{server_name} ALERT: Log Pattern Count Not Increasing"
     rows = ""
-    for file, items in failed.items():
-        for label, (prev, curr) in items.items():
-            rows += f"<tr><td>{file}</td><td>{label}</td><td>{prev}</td><td>{curr}</td></tr>"
+    for label, (prev, curr) in failed.items():
+        rows += f"<tr><td>{label}</td><td>{prev}</td><td>{curr}</td></tr>"
 
     html = f"""
     <html><body>
-        <p><b>ALERT:</b> The following log patterns have stopped increasing.</p>
+        <p><b>ALERT:</b> Pattern activity stopped across all trace files.</p>
         <table border="1" cellpadding="5" cellspacing="0">
-            <tr><th>Log File</th><th>Pattern</th><th>Previous</th><th>Current</th></tr>
+            <tr><th>Pattern</th><th>Previous</th><th>Current</th></tr>
             {rows}
         </table>
         <p>Server: <b>{server_name}</b></p>
@@ -76,17 +155,16 @@ def send_alert_html(failed, server_name):
 
 
 def send_resolved_html(resolved, server_name):
-    subject = f"RESOLVED: Log Pattern Activity Restored on {server_name}"
+    subject = f"RESOLVED: Pattern Activity Restored on {server_name}"
     rows = ""
-    for file, labels in resolved.items():
-        for label in labels:
-            rows += f"<tr><td>{file}</td><td>{label}</td></tr>"
+    for label in resolved:
+        rows += f"<tr><td>{label}</td></tr>"
 
     html = f"""
     <html><body>
-        <p><b>RESOLVED:</b> Log pattern activity has resumed.</p>
+        <p><b>RESOLVED:</b> Pattern activity resumed.</p>
         <table border="1" cellpadding="5" cellspacing="0">
-            <tr><th>Log File</th><th>Pattern</th></tr>
+            <tr><th>Pattern</th></tr>
             {rows}
         </table>
         <p>Server: <b>{server_name}</b></p>
@@ -95,14 +173,26 @@ def send_resolved_html(resolved, server_name):
     send_alert(subject, html)
 
 
+# -------- MAIN --------
 def monitor():
+
+    global VERBOSE
+
     config = config_loader.get_config()
+
+    # -------- TRAFFIC CHECK --------
+    if not is_ss7_traffic_active(config):
+        print("[INFO] SS7 traffic not active. Skipping response monitoring.")
+        return
+
     conf = config["trace_responces"]
 
     log_dir = conf["log_dir"]
+    filename_prefix = conf["filename_prefix"]
     server_name = conf["server_name"]
     state_dir = conf["state_file_dir"]
     patterns = conf["patterns"]
+    VERBOSE = conf.get("log_verbose", True)
 
     state_file = Path(state_dir) / "monitor_responces.json"
     state = load_state(state_file)
@@ -111,47 +201,72 @@ def monitor():
     failed_alerts = {}
     resolved_alerts = {}
 
+    pool = Pool(min(len(patterns), cpu_count()))
+
+    results = pool.map(
+        process_pattern,
+        [(p, log_dir, filename_prefix, state["counts"]) for p in patterns]
+    )
+
+    pool.close()
+    pool.join()
+
+    pattern_result_map = dict(results)
+
     for pattern_conf in patterns:
+
         label = pattern_conf["label"]
-        grep = pattern_conf["grep"]
         interval = pattern_conf["check_interval_seconds"]
         cooldown = pattern_conf["cooldown_seconds"]
 
-        current_counts = run_grep_count(log_dir, grep)
+        total_delta = 0
 
-        for file, curr in current_counts.items():
-            key = f"{file}::{label}"
-            last_entry = state["counts"].get(key)
-            last_alert = state["alerts"].get(key, 0)
-            prev_status = state["status"].get(key, STATUS_OK)
+        for file, (curr, new_offset) in pattern_result_map.get(label, {}).items():
+            offset_key = f"{file}::{label}::offset"
+            state["counts"][offset_key] = new_offset
+            total_delta += curr
 
-            # First run → baseline
-            if not last_entry:
-                state["counts"][key] = {"count": curr, "time": now}
+        key = f"SUM::{label}"
+        last_alert = state["alerts"].get(key, 0)
+        prev_status = state["status"].get(key, STATUS_OK)
+
+        if key not in state["counts"]:
+            state["counts"][key] = {
+                "baseline": total_delta,
+                "delta": 0,
+                "window_start": now
+            }
+            state["status"][key] = STATUS_OK
+            continue
+
+        baseline = state["counts"][key]["baseline"]
+        delta = state["counts"][key]["delta"]
+        window_start = state["counts"][key]["window_start"]
+
+        delta += total_delta
+        state["counts"][key]["delta"] = delta
+
+        if now - window_start < interval:
+            continue
+
+        new_total = baseline + delta
+
+        if delta == 0:
+            if prev_status == STATUS_OK and now - last_alert >= cooldown:
+                failed_alerts[label] = (baseline, new_total)
+                state["alerts"][key] = now
+                state["status"][key] = STATUS_FAIL
+        else:
+            if prev_status == STATUS_FAIL:
+                resolved_alerts[label] = True
                 state["status"][key] = STATUS_OK
-                log(f"[INIT] Baseline set for {key} = {curr}")
-                continue
+                state["alerts"].pop(key, None)
 
-            prev = last_entry["count"]
-            last_time = last_entry["time"]
-
-            if now - last_time < interval:
-                continue
-
-            if curr <= prev:
-                if prev_status == STATUS_OK and now - last_alert >= cooldown:
-                    failed_alerts.setdefault(file, {})[label] = (prev, curr)
-                    state["alerts"][key] = now
-                    state["status"][key] = STATUS_FAIL
-                    log(f"[ALERT] {key} not increasing")
-            else:
-                if prev_status == STATUS_FAIL:
-                    resolved_alerts.setdefault(file, []).append(label)
-                    state["status"][key] = STATUS_OK
-                    state["alerts"].pop(key, None)
-                    log(f"[RESOLVED] {key} resumed")
-
-            state["counts"][key] = {"count": curr, "time": now}
+        state["counts"][key] = {
+            "baseline": new_total,
+            "delta": 0,
+            "window_start": now
+        }
 
     if failed_alerts:
         send_alert_html(failed_alerts, server_name)
@@ -166,4 +281,3 @@ if __name__ == "__main__":
     while True:
         monitor()
         time.sleep(60)
-

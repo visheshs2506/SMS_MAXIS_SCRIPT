@@ -2,6 +2,7 @@ import sys
 import os
 import time
 import json
+import psycopg2
 from datetime import datetime
 from pathlib import Path
 
@@ -30,24 +31,71 @@ def save_state(state_file, state):
         json.dump(state, f, indent=2)
 
 
+def is_smpp_traffic_active(config):
+    """
+    Checks whether SMPP traffic is active based on MAX(time_stamp)
+    from public.smpp_cdr_data table.
+    """
+    try:
+        traffic_conf = config.get("traffic_monitor", {}).get("smpp")
+
+        if not traffic_conf:
+            print("[ERROR] traffic_monitor.smpp missing in config.yaml")
+            return False
+
+        conn = psycopg2.connect(
+            host=traffic_conf["db_host"],
+            port=traffic_conf["db_port"],
+            dbname=traffic_conf["db_name"],
+            user=traffic_conf["db_user"],
+            password=traffic_conf["db_password"],
+            connect_timeout=5
+        )
+
+        query = f"""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX({traffic_conf['timestamp_column']})))
+            FROM {traffic_conf['table']};
+        """
+
+        with conn.cursor() as cur:
+            cur.execute(query)
+            result = cur.fetchone()
+
+        conn.close()
+
+        if not result or result[0] is None:
+            print("[INFO] No SMPP records found in DB.")
+            return False
+
+        seconds_diff = result[0]
+        threshold = traffic_conf["inactivity_threshold_seconds"]
+
+        if seconds_diff <= threshold:
+            return True
+        else:
+            print(f"[INFO] SMPP traffic inactive (last record {int(seconds_diff)} seconds ago).")
+            return False
+
+    except Exception as e:
+        print(f"[ERROR] Traffic check failed: {e}")
+        return False
+
+
 def read_error_lines(log_path, match_patterns, ignore_patterns):
     """
     Read log file and return lines that:
     - Match at least one match_pattern
     - Do NOT match any ignore_pattern
     """
-
     try:
         filtered = []
 
         with open(log_path, "r", encoding="utf-8", errors="ignore") as f:
             for line in f:
 
-                # Must match at least one configured pattern
                 if not any(pattern in line for pattern in match_patterns):
                     continue
 
-                # Ignore configured patterns
                 if any(pattern in line for pattern in ignore_patterns):
                     continue
 
@@ -69,6 +117,12 @@ def monitor_smpp_errors():
         if not smpp_conf:
             print("[ERROR] smpp_monitor section missing in config.yaml")
             time.sleep(5)
+            continue
+
+        # -------- TRAFFIC CHECK --------
+        if not is_smpp_traffic_active(config):
+            print("[INFO] SMPP traffic not active on this site. Skipping SMPP error monitoring.")
+            time.sleep(smpp_conf["check_interval_seconds"])
             continue
 
         # ---- STRICT config loading ----
@@ -130,7 +184,7 @@ def monitor_smpp_errors():
                 inst_state["status"] = STATUS_FAIL
                 inst_state["last_alert_time"] = now
 
-            # -------- REPEATED FAIL (cooldown applies) --------
+            # -------- REPEATED FAIL --------
             elif previous_status == STATUS_FAIL and current_status == STATUS_FAIL:
                 if last_alert_time is None or (now - last_alert_time) >= cooldown:
                     subject = f"SMPP ERROR ALERT | {name} Still Erroring on {server_name}"
@@ -149,7 +203,7 @@ def monitor_smpp_errors():
                 else:
                     print(f"[INFO] {name} errors ongoing, cooldown active.")
 
-            # -------- RESOLVED (FAIL → OK) --------
+            # -------- RESOLVED --------
             elif previous_status == STATUS_FAIL and current_status == STATUS_OK:
                 subject = f"RESOLVED | SMPP Errors Cleared for {name} on {server_name}"
                 body = f"""
@@ -174,4 +228,3 @@ def monitor_smpp_errors():
 
 if __name__ == "__main__":
     monitor_smpp_errors()
-

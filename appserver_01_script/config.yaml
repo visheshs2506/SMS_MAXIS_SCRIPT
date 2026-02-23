@@ -24,6 +24,26 @@ mail_report:
     - "vijeth.raaghu@gtstechlabs.com"
     - "suresh.c@gtstechlabs.com"
 
+traffic_monitor:
+  smpp:
+    db_host: "172.30.6.162"
+    db_port: 5432
+    db_name: "armour_firewall"
+    db_user: "postgres"
+    db_password: "postgres"
+    table: "public.smpp_cdr_data"
+    timestamp_column: "time_stamp"
+    inactivity_threshold_seconds: 120
+
+  ss7:
+    db_host: "172.30.6.162"
+    db_port: 5432
+    db_name: "armour_firewall"
+    db_user: "postgres"
+    db_password: "postgres"
+    table: "public.ss7_log"
+    timestamp_column: "time_stamp"
+    inactivity_threshold_seconds: 120
 
 ping_check:
   target_ip: "172.30.6.161"

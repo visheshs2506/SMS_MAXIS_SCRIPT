@@ -3,6 +3,7 @@ import os
 import time
 import json
 import glob
+import psycopg2
 from datetime import datetime
 from pathlib import Path
 
@@ -35,6 +36,56 @@ def save_state(state_file, state):
         json.dump(state, f, indent=2)
 
 
+def is_ss7_traffic_active(config):
+    """
+    Checks whether SS7 traffic is active using MAX(timestamp_column)
+    from public.ss7_log.
+    """
+    try:
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7")
+
+        if not traffic_conf:
+            print("[ERROR] traffic_monitor.ss7 missing in config.yaml")
+            return False
+
+        conn = psycopg2.connect(
+            host=traffic_conf["db_host"],
+            port=traffic_conf["db_port"],
+            dbname=traffic_conf["db_name"],
+            user=traffic_conf["db_user"],
+            password=traffic_conf["db_password"],
+            connect_timeout=5
+        )
+
+        query = f"""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX({traffic_conf['timestamp_column']})))
+            FROM {traffic_conf['table']};
+        """
+
+        with conn.cursor() as cur:
+            cur.execute(query)
+            result = cur.fetchone()
+
+        conn.close()
+
+        if not result or result[0] is None:
+            print("[INFO] No SS7 records found in DB.")
+            return False
+
+        seconds_diff = result[0]
+        threshold = traffic_conf["inactivity_threshold_seconds"]
+
+        if seconds_diff <= threshold:
+            return True
+        else:
+            print(f"[INFO] SS7 traffic inactive (last record {int(seconds_diff)} seconds ago).")
+            return False
+
+    except Exception as e:
+        print(f"[ERROR] SS7 traffic check failed: {e}")
+        return False
+
+
 def monitor_trace():
     print("[INFO] Trace Monitoring started...")
 
@@ -47,13 +98,20 @@ def monitor_trace():
             time.sleep(10)
             continue
 
-        # ---- STRICT config loading ----
+        # -------- TRAFFIC CHECK --------
+        if not is_ss7_traffic_active(config):
+            print("[INFO] SS7 traffic not active on this site. Skipping trace monitoring.")
+            time.sleep(trace_conf["check_interval_seconds"])
+            continue
+
+        # -------- STRICT CONFIG --------
         server_name = trace_conf["server_name"]
         trace_dir = trace_conf["trace_dir"]
         filename_prefix = trace_conf["filename_prefix"]
         check_interval = trace_conf["check_interval_seconds"]
         cooldown = trace_conf["cooldown_seconds"]
         max_idle = trace_conf["max_idle_seconds"]
+        expected_file_count = trace_conf["trace_file_count"]
         state_dir = trace_conf["state_file_dir"]
 
         state_file = Path(state_dir) / "monitor_trace.json"
@@ -63,8 +121,13 @@ def monitor_trace():
         last_alert_time = state["last_alert_time"]
         file_state = state.get("files", {})
 
+        file_state = {
+            f: v for f, v in file_state.items()
+            if os.path.exists(f)
+        }
+
         today = datetime.now().strftime("%Y-%m-%d")
-        pattern = os.path.join(trace_dir, f"{filename_prefix}_*-Trace-{today}.log")
+        pattern = os.path.join(trace_dir, f"{filename_prefix}*-Trace-{today}.log")
         matched_files = glob.glob(pattern)
 
         now = int(time.time())
@@ -74,6 +137,11 @@ def monitor_trace():
         if not matched_files:
             current_status = STATUS_FAIL
             reason = "No trace files found"
+
+        elif len(matched_files) < expected_file_count:
+            current_status = STATUS_FAIL
+            reason = f"Expected {expected_file_count} trace files but found only {len(matched_files)}"
+
         else:
             for trace_file in matched_files:
                 try:
@@ -105,11 +173,10 @@ def monitor_trace():
             </body></html>
             """
             send_alert(subject, body)
-
             state["status"] = STATUS_FAIL
             state["last_alert_time"] = now
 
-        # -------- FAIL → FAIL (cooldown applies) --------
+        # -------- FAIL → FAIL --------
         elif previous_status == STATUS_FAIL and current_status == STATUS_FAIL:
             if last_alert_time is None or (now - last_alert_time) >= cooldown:
                 subject = f"TRACE ALERT | {server_name} (Still Failing)"
@@ -137,7 +204,6 @@ def monitor_trace():
             </body></html>
             """
             send_alert(subject, body)
-
             state["status"] = STATUS_OK
             state["last_alert_time"] = None
 
@@ -149,4 +215,3 @@ def monitor_trace():
 
 if __name__ == "__main__":
     monitor_trace()
-

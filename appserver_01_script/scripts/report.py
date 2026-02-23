@@ -239,6 +239,50 @@ def check_ss7_connections(config):
 
 def check_smpp_cdr(config):
     try:
+        # ==================================================
+        # 🔹 DB ACTIVITY CHECK (traffic_monitor.smpp)
+        # ==================================================
+        traffic_conf = config.get("traffic_monitor", {}).get("smpp", {})
+
+        db_host = traffic_conf.get("db_host")
+        db_port = traffic_conf.get("db_port")
+        db_name = traffic_conf.get("db_name")
+        db_user = traffic_conf.get("db_user")
+        db_password = traffic_conf.get("db_password")
+        table = traffic_conf.get("table")
+        timestamp_column = traffic_conf.get("timestamp_column")
+        inactivity_threshold = traffic_conf.get("inactivity_threshold_seconds", 120)
+
+        if all([db_host, db_port, db_name, db_user, db_password, table, timestamp_column]):
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                dbname=db_name,
+                user=db_user,
+                password=db_password
+            )
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT MAX({timestamp_column}) FROM {table};")
+            result = cursor.fetchone()
+            cursor.close()
+            conn.close()
+
+            if not result or not result[0]:
+                return ["SMPP CDR Monitor               | Not Active     | No DB Records"]
+
+            last_record_time = result[0]
+            now_db = datetime.datetime.now(last_record_time.tzinfo)
+            time_diff = (now_db - last_record_time).total_seconds()
+
+            if time_diff > inactivity_threshold:
+                return [
+                    f"SMPP CDR Monitor               | Not Active     | No traffic in last {inactivity_threshold}s"
+                ]
+
+        # ==================================================
+        # 🔹 EXISTING FILE LOGIC (UNCHANGED)
+        # ==================================================
+
         smpp_conf = config.get("smpp_cdr_monitor", {})
         dir_path = smpp_conf.get("watch_dir", "/data/armour/smpp/SMPP_CDR/Folder1")
         expected = smpp_conf.get("expected_last_files", 3)
@@ -247,16 +291,20 @@ def check_smpp_cdr(config):
         grace_period = datetime.timedelta(minutes=18)
 
         command = f"ls -ltr --time-style=full-iso {dir_path}"
-        result = subprocess.run(command, shell=True, capture_output=True, text=True, executable="/bin/bash")
+        result = subprocess.run(
+            command, shell=True, capture_output=True, text=True, executable="/bin/bash"
+        )
         lines = result.stdout.strip().split('\n')
 
-        csv_files = [line for line in lines if "ARMOURSMPP" in line and line.strip().endswith(".csv")]
+        csv_files = [
+            line for line in lines
+            if "ARMOURSMPP" in line and line.strip().endswith(".csv")
+        ]
 
-        # Skip last 2 files and take next 3 (for stability)
         if len(csv_files) >= expected + 2:
             last_files = csv_files[-(expected + 2):-2]
         else:
-            last_files = csv_files[-expected:]  # fallback if not enough files
+            last_files = csv_files[-expected:]
 
         recent_count = 0
         writing_count = 0
@@ -271,7 +319,10 @@ def check_smpp_cdr(config):
             filename = parts[-1]
 
             try:
-                file_time = datetime.datetime.strptime(f"{date_str} {time_str.split('.')[0]}", "%Y-%m-%d %H:%M:%S")
+                file_time = datetime.datetime.strptime(
+                    f"{date_str} {time_str.split('.')[0]}",
+                    "%Y-%m-%d %H:%M:%S"
+                )
                 full_path = os.path.join(dir_path, filename)
 
                 if (now - file_time) <= grace_period:
@@ -279,16 +330,24 @@ def check_smpp_cdr(config):
 
                 if os.path.getsize(full_path) > 0:
                     writing_count += 1
+
             except Exception:
                 continue
 
-        time_status = f"SMPP CDR last {expected} file created   | {recent_count}/{expected:<3}       | Expected: {expected}/{expected}"
-        write_status = f"SMPP CDR last {expected} file writing   | {writing_count}/{expected:<3}       | Expected: {expected}/{expected}"
+        time_status = (
+            f"SMPP CDR last {expected} file created   | "
+            f"{recent_count}/{expected:<3}       | Expected: {expected}/{expected}"
+        )
+
+        write_status = (
+            f"SMPP CDR last {expected} file writing   | "
+            f"{writing_count}/{expected:<3}       | Expected: {expected}/{expected}"
+        )
 
         return [time_status, write_status]
 
     except Exception as e:
-        return [f"SMPP CDR Monitor                | Error         | {str(e)}"]
+        return [f"SMPP CDR Monitor               | Error         | {str(e)}"]
 
 
 # -----------------------------
@@ -298,6 +357,51 @@ def check_smpp_cdr(config):
 
 def check_ss7_cdr(config):
     try:
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7", {})
+
+        db_host = traffic_conf.get("db_host")
+        db_port = traffic_conf.get("db_port")
+        db_name = traffic_conf.get("db_name")
+        db_user = traffic_conf.get("db_user")
+        db_password = traffic_conf.get("db_password")
+        table = traffic_conf.get("table")
+        timestamp_column = traffic_conf.get("timestamp_column")
+        inactivity_threshold = traffic_conf.get("inactivity_threshold_seconds", 120)
+
+        if all([db_host, db_port, db_name, db_user, db_password, table, timestamp_column]):
+
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                dbname=db_name,
+                user=db_user,
+                password=db_password
+            )
+            cursor = conn.cursor()
+
+            query = f"SELECT MAX({timestamp_column}) FROM {table};"
+            cursor.execute(query)
+            result = cursor.fetchone()
+
+            cursor.close()
+            conn.close()
+
+            if not result or not result[0]:
+                return ["SS7 CDR Monitor                | Not Active     | No DB Records"]
+
+            last_record_time = result[0]
+            now = datetime.datetime.now(last_record_time.tzinfo)
+            time_diff = (now - last_record_time).total_seconds()
+
+            if time_diff > inactivity_threshold:
+                return [
+                    f"SS7 CDR Monitor                | Not Active     | No traffic in last {inactivity_threshold}s"
+                ]
+
+        # ===============================
+        # 🔹 EXISTING FILE LOGIC (UNCHANGED)
+        # ===============================
+
         ss7_conf = config.get("ss7_monitor", {})
         dir_path = ss7_conf.get("watch_dir", "/data/armour/rule_engine/SS7_CDR/CDR_RawFiles/")
         expected = ss7_conf.get("expected_last_files", 3)
@@ -329,7 +433,10 @@ def check_ss7_cdr(config):
             filename = parts[-1]
 
             try:
-                file_time = datetime.datetime.strptime(f"{date_str} {time_str.split('.')[0]}", "%Y-%m-%d %H:%M:%S")
+                file_time = datetime.datetime.strptime(
+                    f"{date_str} {time_str.split('.')[0]}",
+                    "%Y-%m-%d %H:%M:%S"
+                )
                 full_path = os.path.join(dir_path, filename)
 
                 if (now - file_time) <= grace_period:
@@ -355,34 +462,80 @@ def check_ss7_cdr(config):
 
 
 def smpp_logs_writing(config):
-    smpp_conf = config.get("smpp_monitor", {})
-    instances = smpp_conf.get("instances", {})
-    now = datetime.datetime.now()
+    try:
+        # ==================================================
+        # 🔹 DB ACTIVITY CHECK (traffic_monitor.smpp)
+        # ==================================================
+        traffic_conf = config.get("traffic_monitor", {}).get("smpp", {})
 
-    output_lines = []
+        db_host = traffic_conf.get("db_host")
+        db_port = traffic_conf.get("db_port")
+        db_name = traffic_conf.get("db_name")
+        db_user = traffic_conf.get("db_user")
+        db_password = traffic_conf.get("db_password")
+        table = traffic_conf.get("table")
+        timestamp_column = traffic_conf.get("timestamp_column")
+        inactivity_threshold = traffic_conf.get("inactivity_threshold_seconds", 120)
 
-    for instance_label, instance_info in instances.items():
-        if isinstance(instance_info, dict):
-            path = instance_info.get("path")
-            should_write = instance_info.get("expected_writing", True)
-        else:
-            # Backward compatibility
-            path = instance_info
-            should_write = True
+        if all([db_host, db_port, db_name, db_user, db_password, table, timestamp_column]):
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                dbname=db_name,
+                user=db_user,
+                password=db_password
+            )
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT MAX({timestamp_column}) FROM {table};")
+            result = cursor.fetchone()
+            cursor.close()
+            conn.close()
 
-        try:
-            mod_time = datetime.datetime.fromtimestamp(os.path.getmtime(path))
-            time_diff = (now - mod_time).total_seconds() / 60  # in minutes
+            if not result or not result[0]:
+                return ["SMPP Log Monitor               | Not Active     | No DB Records"]
 
-            writing_status = "writing" if time_diff <= 5 else "not writing"
-        except Exception:
-            writing_status = "not writing"
+            last_record_time = result[0]
+            now_db = datetime.datetime.now(last_record_time.tzinfo)
+            time_diff = (now_db - last_record_time).total_seconds()
 
-        expected_status = "writing" if should_write else "not writing"
-        output = f"{instance_label:<25} | {writing_status:<12} | {expected_status}"
-        output_lines.append(output)
+            if time_diff > inactivity_threshold:
+                return [
+                    f"SMPP Log Monitor               | Not Active     | No traffic in last {inactivity_threshold}s"
+                ]
 
-    return output_lines
+        # ==================================================
+        # 🔹 EXISTING LOG LOGIC (UNCHANGED)
+        # ==================================================
+
+        smpp_conf = config.get("smpp_monitor", {})
+        instances = smpp_conf.get("instances", {})
+        now = datetime.datetime.now()
+
+        output_lines = []
+
+        for instance_label, instance_info in instances.items():
+            if isinstance(instance_info, dict):
+                path = instance_info.get("path")
+                should_write = instance_info.get("expected_writing", True)
+            else:
+                path = instance_info
+                should_write = True
+
+            try:
+                mod_time = datetime.datetime.fromtimestamp(os.path.getmtime(path))
+                time_diff = (now - mod_time).total_seconds() / 60
+                writing_status = "writing" if time_diff <= 5 else "not writing"
+            except Exception:
+                writing_status = "not writing"
+
+            expected_status = "writing" if should_write else "not writing"
+            output = f"{instance_label:<25} | {writing_status:<12} | {expected_status}"
+            output_lines.append(output)
+
+        return output_lines
+
+    except Exception as e:
+        return [f"SMPP Log Monitor               | Error         | {str(e)}"]
 
 
 
@@ -390,40 +543,87 @@ def smpp_logs_writing(config):
 # ✅ Check ss7 Trace writing
 # -----------------------------
 
-
 def ss7_logs_writing(config):
-    trace_conf = config.get("trace_monitor", {})
-    server_name = trace_conf.get("server_name", "App Server")
-    trace_dir = trace_conf.get("trace_dir", "/data/armour/ss7/log")
-    filename_prefix = trace_conf.get("filename_prefix", "armour_1001")
-    trace_file_count = trace_conf.get("trace_file_count", 3)
+    try:
+        # ==================================================
+        # 🔹 DB ACTIVITY CHECK (using traffic_monitor.ss7)
+        # ==================================================
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7", {})
 
-    now = datetime.datetime.now()
+        db_host = traffic_conf.get("db_host")
+        db_port = traffic_conf.get("db_port")
+        db_name = traffic_conf.get("db_name")
+        db_user = traffic_conf.get("db_user")
+        db_password = traffic_conf.get("db_password")
+        table = traffic_conf.get("table")
+        timestamp_column = traffic_conf.get("timestamp_column")
+        inactivity_threshold = traffic_conf.get("inactivity_threshold_seconds", 120)
 
-    output_lines = []
-    written_count = 0
+        if all([db_host, db_port, db_name, db_user, db_password, table, timestamp_column]):
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                dbname=db_name,
+                user=db_user,
+                password=db_password
+            )
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT MAX({timestamp_column}) FROM {table};")
+            result = cursor.fetchone()
+            cursor.close()
+            conn.close()
 
-    for i in range(1, trace_file_count + 1):
-        filename = f"{filename_prefix}_{i}-Trace-{now.strftime('%Y-%m-%d')}.log"
-        file_path = os.path.join(trace_dir, filename)
+            if not result or not result[0]:
+                return ["SS7 Trace Monitor              | Not Active     | No DB Records"]
 
-        if not os.path.exists(file_path):
-            output_lines.append(f"{filename:<35} | Missing File        | Expected Today")
-            continue
+            last_record_time = result[0]
+            now_db = datetime.datetime.now(last_record_time.tzinfo)
+            time_diff = (now_db - last_record_time).total_seconds()
 
-        try:
-            mod_time = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))
-            time_diff = (now - mod_time).total_seconds() / 60  # in minutes
+            if time_diff > inactivity_threshold:
+                return [
+                    f"SS7 Trace Monitor              | Not Active     | No traffic in last {inactivity_threshold}s"
+                ]
 
-            if time_diff <= 5:
-                written_count += 1
-        except Exception as e:
-            output_lines.append(f"{filename:<35} | Error checking      | {str(e)}")
+        # ==================================================
+        # 🔹 EXISTING LOGIC (UNCHANGED)
+        # ==================================================
 
-    summary = f"{'SS7 Trace Files Written':<35} | {written_count}/{trace_file_count:<15} | Expected: {trace_file_count}/{trace_file_count}"
-    output_lines.append(summary)
+        trace_conf = config.get("trace_monitor", {})
+        server_name = trace_conf.get("server_name", "App Server")
+        trace_dir = trace_conf.get("trace_dir", "/data/armour/ss7/log")
+        filename_prefix = trace_conf.get("filename_prefix", "armour_1001")
+        trace_file_count = trace_conf.get("trace_file_count", 3)
 
-    return output_lines
+        now = datetime.datetime.now()
+
+        output_lines = []
+        written_count = 0
+
+        for i in range(1, trace_file_count + 1):
+            filename = f"{filename_prefix}_{i}-Trace-{now.strftime('%Y-%m-%d')}.log"
+            file_path = os.path.join(trace_dir, filename)
+
+            if not os.path.exists(file_path):
+                output_lines.append(f"{filename:<35} | Missing File        | Expected Today")
+                continue
+
+            try:
+                mod_time = datetime.datetime.fromtimestamp(os.path.getmtime(file_path))
+                time_diff = (now - mod_time).total_seconds() / 60
+
+                if time_diff <= 5:
+                    written_count += 1
+            except Exception as e:
+                output_lines.append(f"{filename:<35} | Error checking      | {str(e)}")
+
+        summary = f"{'SS7 Trace Files Written':<35} | {written_count}/{trace_file_count:<15} | Expected: {trace_file_count}/{trace_file_count}"
+        output_lines.append(summary)
+
+        return output_lines
+
+    except Exception as e:
+        return [f"SS7 Trace Monitor              | Error         | {str(e)}"]
 
 # -----------------------------
 # ✅ Check smpp Error
@@ -575,65 +775,118 @@ def check_generic_service_status(config):
 
 
 def armour_mt_response_count(config):
-    log_date = datetime.datetime.now().strftime("%Y-%m-%d")
-    trace_config = config.get("trace_responces", {})
-    log_dir = trace_config.get("log_dir", "/data/armour/ss7/log")
-    state_dir = trace_config.get("state_file_dir", "/tmp/monitor_state")
-    filename_prefix = trace_config.get("filename_prefix", "armour_1001")
-    os.makedirs(state_dir, exist_ok=True)
-
-    state_file = os.path.join(state_dir, "armour_mt_prev_counts.json")
-    patterns = trace_config.get("patterns", [])
-
-    # Load previous state
     try:
-        with open(state_file, "r") as f:
-            prev_counts = json.load(f)
-    except (FileNotFoundError, json.JSONDecodeError):
-        prev_counts = {}
+        # ==================================================
+        # 🔹 DB ACTIVITY CHECK (traffic_monitor.ss7)
+        # ==================================================
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7", {})
 
-    results = {}
-    output_lines = []
+        db_host = traffic_conf.get("db_host")
+        db_port = traffic_conf.get("db_port")
+        db_name = traffic_conf.get("db_name")
+        db_user = traffic_conf.get("db_user")
+        db_password = traffic_conf.get("db_password")
+        table = traffic_conf.get("table")
+        timestamp_column = traffic_conf.get("timestamp_column")
+        inactivity_threshold = traffic_conf.get("inactivity_threshold_seconds", 120)
 
-    for item in patterns:
-        label = item.get("label", "Unknown")
-        grep_pattern = item.get("grep")
+        if all([db_host, db_port, db_name, db_user, db_password, table, timestamp_column]):
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                dbname=db_name,
+                user=db_user,
+                password=db_password
+            )
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT MAX({timestamp_column}) FROM {table};")
+            result = cursor.fetchone()
+            cursor.close()
+            conn.close()
 
-        if not grep_pattern:
-            output_lines.append(f"{label:<35} | Current: N/A     | Previous: N/A (Missing grep)")
-            continue
+            if not result or not result[0]:
+                return ["Armour MT Response           | Not Active     | No DB Records"]
 
+            last_record_time = result[0]
+            now_db = datetime.datetime.now(last_record_time.tzinfo)
+            time_diff = (now_db - last_record_time).total_seconds()
+
+            if time_diff > inactivity_threshold:
+                return [
+                    f"Armour MT Response           | Not Active     | No traffic in last {inactivity_threshold}s"
+                ]
+
+        # ==================================================
+        # 🔹 EXISTING LOGIC (UNCHANGED)
+        # ==================================================
+
+        log_date = datetime.datetime.now().strftime("%Y-%m-%d")
+        trace_config = config.get("trace_responces", {})
+        log_dir = trace_config.get("log_dir", "/data/armour/ss7/log")
+        state_dir = trace_config.get("state_file_dir", "/tmp/monitor_state")
+        filename_prefix = trace_config.get("filename_prefix", "armour_1001")
+        os.makedirs(state_dir, exist_ok=True)
+
+        state_file = os.path.join(state_dir, "armour_mt_prev_counts.json")
+        patterns = trace_config.get("patterns", [])
+
+        # Load previous state
         try:
-            grep_cmd = f"grep -c '{grep_pattern}' {log_dir}/{filename_prefix}_*-Trace-{log_date}.log"
-            result = subprocess.check_output(grep_cmd, shell=True, text=True)
-            current_count = sum(int(line.split(":")[1]) for line in result.strip().split("\n") if ":" in line)
-        except subprocess.CalledProcessError:
-            current_count = 0
+            with open(state_file, "r") as f:
+                prev_counts = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            prev_counts = {}
 
-        previous_count = prev_counts.get(label, 0)
+        results = {}
+        output_lines = []
 
-        # Determine status
-        if current_count > previous_count:
-            status = "Increased"
-        elif current_count < previous_count:
-            status = "Decreased"
-        else:
-            status = "Same"
+        for item in patterns:
+            label = item.get("label", "Unknown")
+            grep_pattern = item.get("grep")
 
-        # Append output line
-        output_line = (
-            f"{label:<35} | Current: {str(current_count):<8} | Previous: {str(previous_count)} ({status})"
-        )
-        output_lines.append(output_line)
+            if not grep_pattern:
+                output_lines.append(
+                    f"{label:<35} | Current: N/A     | Previous: N/A (Missing grep)"
+                )
+                continue
 
-        # Update results
-        results[label] = current_count
+            try:
+                grep_cmd = (
+                    f"grep -c '{grep_pattern}' "
+                    f"{log_dir}/{filename_prefix}_*-Trace-{log_date}.log"
+                )
+                result = subprocess.check_output(grep_cmd, shell=True, text=True)
+                current_count = sum(
+                    int(line.split(":")[1])
+                    for line in result.strip().split("\n")
+                    if ":" in line
+                )
+            except subprocess.CalledProcessError:
+                current_count = 0
 
-    # Save current state
-    with open(state_file, "w") as f:
-        json.dump(results, f, indent=2)
+            previous_count = prev_counts.get(label, 0)
 
-    return output_lines
+            if current_count > previous_count:
+                status = "Increased"
+            elif current_count < previous_count:
+                status = "Decreased"
+            else:
+                status = "Same"
+
+            output_lines.append(
+                f"{label:<35} | Current: {str(current_count):<8} | Previous: {str(previous_count)} ({status})"
+            )
+
+            results[label] = current_count
+
+        # Save current state
+        with open(state_file, "w") as f:
+            json.dump(results, f, indent=2)
+
+        return output_lines
+
+    except Exception as e:
+        return [f"Armour MT Response           | Error         | {str(e)}"]
 
 
 

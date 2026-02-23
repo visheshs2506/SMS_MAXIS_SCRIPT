@@ -3,6 +3,7 @@ import os
 import time
 import glob
 import json
+import psycopg2
 from datetime import datetime
 from pathlib import Path
 
@@ -34,6 +35,57 @@ def save_state(state_file, state):
         json.dump(state, f, indent=2)
 
 
+def is_smpp_traffic_active(config):
+    """
+    Checks whether SMPP traffic is active based on MAX(time_stamp)
+    from public.smpp_cdr_data table.
+    """
+    try:
+        traffic_conf = config.get("traffic_monitor", {}).get("smpp")
+
+        if not traffic_conf:
+            print("[ERROR] traffic_monitor.smpp missing in config.yaml")
+            return False
+
+        conn = psycopg2.connect(
+            host=traffic_conf["db_host"],
+            port=traffic_conf["db_port"],
+            dbname=traffic_conf["db_name"],
+            user=traffic_conf["db_user"],
+            password=traffic_conf["db_password"],
+            connect_timeout=5
+        )
+
+        query = f"""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX({traffic_conf['timestamp_column']})))
+            FROM {traffic_conf['table']};
+        """
+
+        with conn.cursor() as cur:
+            cur.execute(query)
+            result = cur.fetchone()
+
+        conn.close()
+
+        # No records yet
+        if not result or result[0] is None:
+            print("[INFO] No SMPP records found in DB.")
+            return False
+
+        seconds_diff = result[0]
+        threshold = traffic_conf["inactivity_threshold_seconds"]
+
+        if seconds_diff <= threshold:
+            return True
+        else:
+            print(f"[INFO] SMPP traffic inactive (last record {int(seconds_diff)} seconds ago).")
+            return False
+
+    except Exception as e:
+        print(f"[ERROR] Traffic check failed: {e}")
+        return False
+
+
 def monitor_smpp_cdr():
     print("[INFO] SMPP CDR Monitoring started...")
 
@@ -46,12 +98,17 @@ def monitor_smpp_cdr():
             time.sleep(10)
             continue
 
-        # ---- STRICT config loading ----
         server_name = cdr_conf["server_name"]
         watch_dir = cdr_conf["watch_dir"]
         cooldown = cdr_conf["cooldown_seconds"]
         loop_interval = cdr_conf["check_interval_seconds"]
         state_dir = cdr_conf["state_file_dir"]
+
+        # -------- TRAFFIC CHECK --------
+        if not is_smpp_traffic_active(config):
+            print("[INFO] SMPP traffic not active on this site. Skipping monitoring.")
+            time.sleep(loop_interval)
+            continue
 
         state_file = Path(state_dir) / "monitor_smpp_cdr.json"
         state = load_state(state_file)
@@ -88,11 +145,11 @@ def monitor_smpp_cdr():
                 size_before = os.path.getsize(file)
                 time.sleep(120)
                 size_after = os.path.getsize(file)
+
                 if size_after == size_before:
                     current_status = STATUS_FAIL
                     reason = f"{os.path.basename(file)} not growing"
 
-            # Otherwise OK
             else:
                 current_status = STATUS_OK
 
@@ -113,7 +170,7 @@ def monitor_smpp_cdr():
             state["last_alert_time"] = now
             save_state(state_file, state)
 
-        # -------- REPEATED FAIL (cooldown applies) --------
+        # -------- REPEATED FAIL --------
         elif previous_status == STATUS_FAIL and current_status == STATUS_FAIL:
             if last_alert_time is None or (now - last_alert_time) >= cooldown:
                 subject = f"SMPP CDR ALERT | {server_name} (Still Failing)"
@@ -132,7 +189,7 @@ def monitor_smpp_cdr():
             else:
                 print("[INFO] SMPP CDR issue ongoing, cooldown active.")
 
-        # -------- RESOLVED (FAIL → OK) --------
+        # -------- RESOLVED --------
         elif previous_status == STATUS_FAIL and current_status == STATUS_OK:
             subject = f"RESOLVED | SMPP CDR Normal on {server_name}"
             body = f"""
@@ -153,4 +210,3 @@ def monitor_smpp_cdr():
 
 if __name__ == "__main__":
     monitor_smpp_cdr()
-
