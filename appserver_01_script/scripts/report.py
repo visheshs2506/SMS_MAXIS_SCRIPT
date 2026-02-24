@@ -5,6 +5,7 @@ import subprocess
 import shutil
 import psutil
 import json
+import psycopg2
 
 # Add parent directory to import custom modules
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -681,36 +682,103 @@ def smpp_error_count(config):
 # -----------------------------
 
 def ss7_trace_count(config):
-    trace_conf = config.get("trace_monitor", {})
-    trace_dir = trace_conf.get("trace_dir", "/data/armour/ss7/log")
-    prefix = trace_conf.get("filename_prefix", "armour_1001")
-    file_count = trace_conf.get("trace_file_count", 10)
-    latency_threshold = trace_conf.get("latency_threshold", 2000)
+    try:
+        # ==================================================
+        # 🔹 DB ACTIVITY CHECK (traffic_monitor.ss7)
+        # ==================================================
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7", {})
 
-    today_str = datetime.datetime.now().strftime("%Y-%m-%d")
-    output_lines = []
+        db_host = traffic_conf.get("db_host")
+        db_port = traffic_conf.get("db_port")
+        db_name = traffic_conf.get("db_name")
+        db_user = traffic_conf.get("db_user")
+        db_password = traffic_conf.get("db_password")
+        table = traffic_conf.get("table")
+        timestamp_column = traffic_conf.get("timestamp_column")
+        inactivity_threshold = traffic_conf.get("inactivity_threshold_seconds", 120)
 
-    for i in range(1, file_count + 1):
-        filename = f"{prefix}_{i}-Trace-{today_str}.log"
-        full_path = os.path.join(trace_dir, filename)
+        if all([db_host, db_port, db_name, db_user, db_password, table, timestamp_column]):
+            conn = psycopg2.connect(
+                host=db_host,
+                port=db_port,
+                dbname=db_name,
+                user=db_user,
+                password=db_password
+            )
+            cursor = conn.cursor()
+            cursor.execute(f"SELECT MAX({timestamp_column}) FROM {table};")
+            result = cursor.fetchone()
+            cursor.close()
+            conn.close()
 
-        if not os.path.isfile(full_path):
-            output_lines.append(f"SS7 Trace File {i:<2}              | File Missing | Skipped")
-            continue
+            if not result or not result[0]:
+                return ["SS7 Trace Monitor              | Not Active     | No DB Records"]
 
-        try:
-            cmd = f'grep -c "Latency:-1" "{full_path}"'
-            result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
-            latency_count = int(result.stdout.strip()) if result.returncode == 0 else 0
-        except Exception as e:
-            output_lines.append(f"SS7 Trace File {i:<2}              | Error        | {str(e)}")
-            continue
+            last_record_time = result[0]
+            now_db = datetime.datetime.now(last_record_time.tzinfo)
+            time_diff = (now_db - last_record_time).total_seconds()
 
-        status = f"Not Exceed: {latency_threshold}" if latency_count < latency_threshold else f"! Exceeds Limit"
-        line = f"SS7 Trace File {i:<2}              | {latency_count:<5}       | {status}"
-        output_lines.append(line)
+            if time_diff > inactivity_threshold:
+                return [
+                    f"SS7 Trace Monitor              | Not Active     | No traffic in last {inactivity_threshold}s"
+                ]
 
-    return output_lines
+        # ==================================================
+        # 🔹 EXISTING TRACE LOGIC (UNCHANGED)
+        # ==================================================
+
+        trace_conf = config.get("trace_monitor", {})
+        trace_dir = trace_conf.get("trace_dir", "/data/armour/ss7/log")
+        prefix = trace_conf.get("filename_prefix", "armour_1001")
+        file_count = trace_conf.get("trace_file_count", 10)
+        latency_threshold = trace_conf.get("latency_threshold", 2000)
+
+        today_str = datetime.datetime.now().strftime("%Y-%m-%d")
+        output_lines = []
+
+        for i in range(1, file_count + 1):
+            filename = f"{prefix}_{i}-Trace-{today_str}.log"
+            full_path = os.path.join(trace_dir, filename)
+
+            if not os.path.isfile(full_path):
+                output_lines.append(
+                    f"SS7 Trace File {i:<2}              | File Missing | Skipped"
+                )
+                continue
+
+            try:
+                cmd = f'grep -c "Latency:-1" "{full_path}"'
+                result = subprocess.run(
+                    cmd, shell=True, capture_output=True, text=True
+                )
+                latency_count = (
+                    int(result.stdout.strip())
+                    if result.returncode == 0 and result.stdout.strip()
+                    else 0
+                )
+            except Exception as e:
+                output_lines.append(
+                    f"SS7 Trace File {i:<2}              | Error        | {str(e)}"
+                )
+                continue
+
+            status = (
+                f"Not Exceed: {latency_threshold}"
+                if latency_count < latency_threshold
+                else "! Exceeds Limit"
+            )
+
+            line = (
+                f"SS7 Trace File {i:<2}              | "
+                f"{latency_count:<5}       | {status}"
+            )
+
+            output_lines.append(line)
+
+        return output_lines
+
+    except Exception as e:
+        return [f"SS7 Trace Monitor              | Error         | {str(e)}"]
 
 
 # -----------------------------
