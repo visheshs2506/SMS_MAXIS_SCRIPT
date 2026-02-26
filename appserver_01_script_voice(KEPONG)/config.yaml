@@ -1,0 +1,212 @@
+mail:
+  subject_prefix: "Critical Alert | Maxis | Malaysia | VFW VOICE KEPONG"
+  smtp_server: "10.200.58.80"
+  smtp_port: 25
+  from_email: "critical-alerts-gtsfw@maxis.com.my"
+  to_emails:
+    - "projectintern01@gtstechlabs.com"
+    - "projectintern02@gtstechlabs.com"
+    - "vishal.p@gtstechlabs.com"
+    - "prakruthi.kr@gtstechlabs.com"
+    - "vijeth.raaghu@gtstechlabs.com"
+    - "suresh.c@gtstechlabs.com"
+
+mail_report:
+  subject_prefix: "Maxis | Malaysia | VFW VOICE KEPONG | VOICE App Server 01 - System Report"
+  smtp_server: "10.200.58.80"
+  smtp_port: 25
+  from_email: "reports-gtsfw@maxis.com.my"
+  to_emails:
+    - "projectintern01@gtstechlabs.com"
+    - "projectintern02@gtstechlabs.com"
+    - "vishal.p@gtstechlabs.com"
+    - "prakruthi.kr@gtstechlabs.com"
+    - "vijeth.raaghu@gtstechlabs.com"
+    - "suresh.c@gtstechlabs.com"
+
+
+ping_check:
+  target_ip: "172.19.133.167"
+  cooldown_seconds: 1800
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  state_file_dir: "/data/appserver_01_script/state"
+
+
+ss7_connection_check:
+  expected:
+    tcap: 15
+    link: 2
+    m3ua: 4
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  working_dir: "/usr/local/aculab/v6"
+  cooldown_seconds: 300
+  state_file_dir: "/data/appserver_01_script/state"
+
+
+uptime_check:
+  threshold_minutes: 8
+  cooldown_seconds: 300
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  state_file_dir: "/data/appserver_01_script/state"
+
+ss7_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  watch_dir: "/data/armour/rule_engine/SS7_CDR/CDR_RawFiles/"
+  cooldown_seconds: 300
+  check_interval_seconds: 300
+  state_file_dir: "/data/appserver_01_script/state"
+
+cfg_monitor:
+  cfg_base_path: "/data/armour/ss7/cfg/armour_100"
+  cfg_count: 5
+  check_interval_seconds: 60
+  cooldown_seconds: 300
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  state_file_dir: "/data/appserver_01_script/state"
+
+cpu_monitor:
+  threshold: 80
+  monitor_duration: 1
+  cooldown_seconds: 300
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  state_file_dir: "/data/appserver_01_script/state"
+
+sip_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  cooldown_seconds: 3600
+  check_interval_seconds: 60
+  state_file_dir: "/data/appserver_01_script/state"
+  match_patterns:
+    - "[ERROR]"
+  ignore_patterns: []
+  instances:
+    SIP:
+      path: "/data/SIP/Logs/ARMOUR_SIP_"
+
+
+ha_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  check_interval_seconds: 60
+  state_file_dir: "/data/appserver_01_script/state"
+  cooldown_seconds: 300
+  services:
+    - haproxy
+    - keepalived
+
+service_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  check_interval_seconds: 10
+  state_file_dir: "/data/appserver_01_script/state"
+  services:
+    # - name: "PostgreSQL 16"
+    #   check_command: "systemctl is-active postgresql-16"
+    #   check_interval_seconds: 600        # Check every 10 minutes
+    #   cooldown_seconds: 1800
+    # - name: "Apache NiFi"
+    #   check_command: "ps -ef | grep nifi | grep -v grep"
+    #   check_interval_seconds: 600        # Check every 10 minutes
+    #   cooldown_seconds: 1800
+    - name: "Java"
+      check_command: "ps -ef | grep java | grep -v grep"
+      check_interval_seconds: 60        # Check every 10 minutes
+      cooldown_seconds: 300
+    - name: "Tomcat"
+      check_command: "ps -ef | grep tomcat | grep -v grep"
+      check_interval_seconds: 60        # Check every 10 minutes
+      cooldown_seconds: 300
+    - name: "Kafka"
+      check_command: "ps -ef | grep kafka | grep -v grep"
+      check_interval_seconds: 60       # Check every 10 minutes
+      cooldown_seconds: 300
+    # - name: "Apache Superset"
+    #   check_command: "ps -ef | grep superset | grep -v grep"
+    #   check_interval_seconds: 600        # Check every 10 minutes
+    #   cooldown_seconds: 1800
+    - name: "Zookeeper"
+      check_command: "ps -ef | grep zookeeper | grep -v grep"
+      check_interval_seconds: 60        # Check every 10 minutes
+      cooldown_seconds: 1800
+
+smpp_cdr_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  watch_dir: "/data/SIP/CDR"
+  cooldown_seconds: 300
+  check_interval_seconds: 300
+  state_file_dir: "/data/appserver_01_script/state"
+
+storage_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  state_file_dir: "/data/appserver_01_script/state"
+  check_interval_seconds: 60
+  directories:
+    "/":
+      threshold: 70
+      cooldown_seconds: 300
+    "/data":
+      threshold: 70
+      cooldown_seconds: 300
+    "/tmp":
+      threshold: 70
+      cooldown_seconds: 300
+    "/var":
+      threshold: 70
+      cooldown_seconds: 300
+    "/home":
+      threshold: 70
+      cooldown_seconds: 300
+    "/backup":
+      threshold: 70
+      cooldown_seconds: 300
+    "/run":
+      threshold: 70
+      cooldown_seconds: 300
+
+trace_responces:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  log_dir: "/data/armour/ss7/log/"
+  log_verbose: true
+  state_file_dir: "/data/appserver_01_script/state"
+  filename_prefix: "armour_100"
+  patterns:
+    - label: 'IN'
+      grep: 'Armour::onSS7Message\|Payload.*?\"message_type\":\s*6'
+      check_interval_seconds: 60
+      cooldown_seconds: 300
+
+    - label: 'OUT'
+      grep: 'SignalingInterface::processArmourResponse\|Armour Response\|.*\"message_type\":\s*6'
+      check_interval_seconds: 60
+      cooldown_seconds: 300
+
+jar_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  check_interval_seconds: 60
+  cooldown_seconds: 300
+  state_file_dir: "/data/appserver_01_script/state"
+  processes:
+    "SIP_MAXIS_V2.3_TCP_UDP_19_01_2026.jar": 60
+
+trace_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  trace_dir: "/data/armour/ss7/log"
+  filename_prefix: "armour_100"
+  check_interval_seconds: 20
+  cooldown_seconds: 300
+  max_idle_seconds: 20
+  trace_file_count: 5
+  latency_threshold: 2000
+  state_file_dir: "/data/appserver_01_script/state"
+
+memory_monitor:
+  server_name: "Maxis VOICE KEPONG App Server 01"
+  state_file_dir: "/data/appserver_01_script/state"
+  threshold: 70
+  check_interval_seconds: 60
+  cooldown_seconds: 300
+
+log:
+  directory: "/data/appserver_01_script/logs"
+  state_file_dir: "/data/appserver_01_script/state"
+  filename_prefix: "appserver01"
+  timestamp_format: "%Y-%m-%d_%H-%M-%S"
+  extension: ".txt"
