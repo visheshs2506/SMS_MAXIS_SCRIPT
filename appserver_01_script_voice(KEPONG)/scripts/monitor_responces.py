@@ -5,6 +5,7 @@ import datetime
 import json
 import glob
 import re
+import psycopg2
 from pathlib import Path
 from multiprocessing import Pool, cpu_count
 
@@ -42,6 +43,53 @@ def save_state(state_file, state):
     state_file.parent.mkdir(parents=True, exist_ok=True)
     with open(state_file, "w") as f:
         json.dump(state, f, indent=2)
+
+
+# -------- SS7 TRAFFIC CHECK --------
+def is_ss7_traffic_active(config):
+    try:
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7")
+
+        if not traffic_conf:
+            print("[ERROR] traffic_monitor.ss7 missing in config.yaml")
+            return False
+
+        conn = psycopg2.connect(
+            host=traffic_conf["db_host"],
+            port=traffic_conf["db_port"],
+            dbname=traffic_conf["db_name"],
+            user=traffic_conf["db_user"],
+            password=traffic_conf["db_password"],
+            connect_timeout=5
+        )
+
+        query = f"""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX({traffic_conf['timestamp_column']})))
+            FROM {traffic_conf['table']};
+        """
+
+        with conn.cursor() as cur:
+            cur.execute(query)
+            result = cur.fetchone()
+
+        conn.close()
+
+        if not result or result[0] is None:
+            print("[INFO] No SS7 records found in DB.")
+            return False
+
+        seconds_diff = result[0]
+        threshold = traffic_conf["inactivity_threshold_seconds"]
+
+        if seconds_diff <= threshold:
+            return True
+        else:
+            print(f"[INFO] SS7 traffic inactive (last record {int(seconds_diff)} seconds ago).")
+            return False
+
+    except Exception as e:
+        print(f"[ERROR] SS7 traffic check failed: {e}")
+        return False
 
 
 # -------- MULTIPROCESS WORKER --------
@@ -131,6 +179,12 @@ def monitor():
     global VERBOSE
 
     config = config_loader.get_config()
+
+    # -------- TRAFFIC CHECK --------
+    if not is_ss7_traffic_active(config):
+        print("[INFO] SS7 traffic not active. Skipping response monitoring.")
+        return
+
     conf = config["trace_responces"]
 
     log_dir = conf["log_dir"]
@@ -183,7 +237,6 @@ def monitor():
                 "window_start": now
             }
             state["status"][key] = STATUS_OK
-            log(f"[INIT] SUM Baseline set for {label} = {total_delta}")
             continue
 
         baseline = state["counts"][key]["baseline"]
@@ -198,20 +251,16 @@ def monitor():
 
         new_total = baseline + delta
 
-        log(f"[CHECK] {label} SUM matches in last {interval}s = {delta}")
-
         if delta == 0:
             if prev_status == STATUS_OK and now - last_alert >= cooldown:
                 failed_alerts[label] = (baseline, new_total)
                 state["alerts"][key] = now
                 state["status"][key] = STATUS_FAIL
-                log(f"[ALERT] {label} no increase across all traces", True)
         else:
             if prev_status == STATUS_FAIL:
                 resolved_alerts[label] = True
                 state["status"][key] = STATUS_OK
                 state["alerts"].pop(key, None)
-                log(f"[RESOLVED] {label} resumed", True)
 
         state["counts"][key] = {
             "baseline": new_total,

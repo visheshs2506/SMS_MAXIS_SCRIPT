@@ -1,0 +1,133 @@
+mail:
+  subject_prefix: "Critical Alert | Maxis | Malaysia | VFW DB KEPONG"
+  smtp_server: "10.200.58.80"
+  smtp_port: 25
+  from_email: "critical-alerts-gtsfw@maxis.com.my"
+  to_emails:
+    - "projectintern01@gtstechlabs.com"
+    - "projectintern02@gtstechlabs.com"
+    - "vishal.p@gtstechlabs.com"
+    - "prakruthi.kr@gtstechlabs.com"
+    - "vijeth.raaghu@gtstechlabs.com"
+    - "suresh.c@gtstechlabs.com"
+
+mail_report:
+  subject_prefix: "Maxis | Malaysia | VFW DB KEPONG | DB Server 01 - System Report"
+  smtp_server: "10.200.58.80"
+  smtp_port: 25
+  from_email: "reports-gtsfw@maxis.com.my"
+  to_emails:
+    - "projectintern01@gtstechlabs.com"
+    - "projectintern02@gtstechlabs.com"
+    - "vishal.p@gtstechlabs.com"
+    - "prakruthi.kr@gtstechlabs.com"
+    - "vijeth.raaghu@gtstechlabs.com"
+    - "suresh.c@gtstechlabs.com"
+
+
+ping_check:
+  target_ip: "172.30.6.162"
+  cooldown_seconds: 1800
+  server_name: "Maxis VOICE KEPONG DB Server 01"
+  state_file_dir: "/data/dbserver_01_script/state"
+
+
+uptime_check:
+  threshold_minutes: 8
+  cooldown_seconds: 300
+  server_name: "Maxis VOICE KEPONG DB Server 01"
+  state_file_dir: "/data/dbserver_01_script/state"
+
+
+cpu_monitor:
+  threshold: 80
+  monitor_duration: 1
+  cooldown_seconds: 300
+  server_name: "Maxis VOICE KEPONG DB Server 01"
+  state_file_dir: "/data/dbserver_01_script/state"
+
+
+ha_monitor:
+  server_name: "Maxis VOICE KEPONG DB Server 01"
+  check_interval_seconds: 60
+  state_file_dir: "/data/dbserver_01_script/state"
+  cooldown_seconds: 300
+  services:
+    - haproxy
+    - keepalived
+
+service_monitor:
+  server_name: "Maxis VOICE KEPONG DB Server 01"
+  check_interval_seconds: 10
+  state_file_dir: "/data/dbserver_01_script/state"
+  services:
+    - name: "PostgreSQL 16"
+      check_command: "systemctl is-active postgresql-16"
+      check_interval_seconds: 600        # Check every 10 minutes
+      cooldown_seconds: 1800
+    # - name: "Apache NiFi"
+    #   check_command: "ps -ef | grep nifi | grep -v grep"
+    #   check_interval_seconds: 600        # Check every 10 minutes
+    #   cooldown_seconds: 1800
+    - name: "Java"
+      check_command: "ps -ef | grep java | grep -v grep"
+      check_interval_seconds: 60        # Check every 10 minutes
+      cooldown_seconds: 300
+    - name: "Tomcat"
+      check_command: "ps -ef | grep tomcat | grep -v grep"
+      check_interval_seconds: 60        # Check every 10 minutes
+      cooldown_seconds: 300
+    # - name: "Kafka"
+    #   check_command: "ps -ef | grep kafka | grep -v grep"
+    #   check_interval_seconds: 60       # Check every 10 minutes
+    #   cooldown_seconds: 300
+    # - name: "Apache Superset"
+    #   check_command: "ps -ef | grep superset | grep -v grep"
+    #   check_interval_seconds: 600        # Check every 10 minutes
+    #   cooldown_seconds: 1800
+    # - name: "Zookeeper"
+    #   check_command: "ps -ef | grep zookeeper | grep -v grep"
+    #   check_interval_seconds: 60        # Check every 10 minutes
+    #   cooldown_seconds: 1800
+
+storage_monitor:
+  server_name: "Maxis VOICE KEPONG DB Server 01"
+  state_file_dir: "/data/dbserver_01_script/state"
+  check_interval_seconds: 60
+  directories:
+    "/":
+      threshold: 70
+      cooldown_seconds: 300
+    "/data":
+      threshold: 70
+      cooldown_seconds: 300
+    "/tmp":
+      threshold: 70
+      cooldown_seconds: 300
+    "/var":
+      threshold: 70
+      cooldown_seconds: 300
+    "/home":
+      threshold: 70
+      cooldown_seconds: 300
+    "/backup":
+      threshold: 70
+      cooldown_seconds: 300
+    "/run":
+      threshold: 70
+      cooldown_seconds: 300
+
+
+memory_monitor:
+  server_name: "Maxis VOICE KEPONG DB Server 01"
+  state_file_dir: "/data/dbserver_01_script/state"
+  threshold: 70
+  check_interval_seconds: 60
+  cooldown_seconds: 300
+
+log:
+  directory: "/data/dbserver_01_script/logs"
+  state_file_dir: "/data/dbserver_01_script/state"
+  filename_prefix: "dbserver02"
+  timestamp_format: "%Y-%m-%d_%H-%M-%S"
+  extension: ".txt"

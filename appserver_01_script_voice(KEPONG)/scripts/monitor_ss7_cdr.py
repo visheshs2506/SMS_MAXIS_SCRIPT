@@ -3,6 +3,7 @@ import os
 import time
 import glob
 import json
+import psycopg2
 from pathlib import Path
 from datetime import datetime
 
@@ -34,6 +35,56 @@ def save_state(state_file, state):
         json.dump(state, f, indent=2)
 
 
+def is_ss7_traffic_active(config):
+    """
+    Checks whether SS7 traffic is active using MAX(timestamp_column)
+    from public.ss7_log.
+    """
+    try:
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7")
+
+        if not traffic_conf:
+            print("[ERROR] traffic_monitor.ss7 missing in config.yaml")
+            return False
+
+        conn = psycopg2.connect(
+            host=traffic_conf["db_host"],
+            port=traffic_conf["db_port"],
+            dbname=traffic_conf["db_name"],
+            user=traffic_conf["db_user"],
+            password=traffic_conf["db_password"],
+            connect_timeout=5
+        )
+
+        query = f"""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX({traffic_conf['timestamp_column']})))
+            FROM {traffic_conf['table']};
+        """
+
+        with conn.cursor() as cur:
+            cur.execute(query)
+            result = cur.fetchone()
+
+        conn.close()
+
+        if not result or result[0] is None:
+            print("[INFO] No SS7 records found in DB.")
+            return False
+
+        seconds_diff = result[0]
+        threshold = traffic_conf["inactivity_threshold_seconds"]
+
+        if seconds_diff <= threshold:
+            return True
+        else:
+            print(f"[INFO] SS7 traffic inactive (last record {int(seconds_diff)} seconds ago).")
+            return False
+
+    except Exception as e:
+        print(f"[ERROR] SS7 traffic check failed: {e}")
+        return False
+
+
 def monitor_ss7_cdr():
     print("[INFO] SS7 CDR Monitoring started...")
 
@@ -44,6 +95,12 @@ def monitor_ss7_cdr():
         if not ss7_conf:
             print("[ERROR] ss7_monitor section missing in config.yaml")
             time.sleep(10)
+            continue
+
+        # -------- TRAFFIC CHECK --------
+        if not is_ss7_traffic_active(config):
+            print("[INFO] SS7 traffic not active on this site. Skipping monitoring.")
+            time.sleep(ss7_conf["check_interval_seconds"])
             continue
 
         # ---- STRICT config loading ----
@@ -77,17 +134,16 @@ def monitor_ss7_cdr():
             latest_files = files[:2]
             sizes = [os.path.getsize(f) for f in latest_files]
 
-            # Both latest files are 0 bytes
             if len(latest_files) == 2 and sizes[0] == 0 and sizes[1] == 0:
                 current_status = STATUS_FAIL
                 reason = "Both latest SS7 CDR files are 0 bytes"
 
-            # Single file stuck at 0 bytes
             elif len(latest_files) == 1 and sizes[0] == 0:
                 file = latest_files[0]
                 size_before = os.path.getsize(file)
                 time.sleep(120)
                 size_after = os.path.getsize(file)
+
                 if size_after == size_before:
                     current_status = STATUS_FAIL
                     reason = f"{os.path.basename(file)} stuck at 0 bytes"
@@ -95,7 +151,7 @@ def monitor_ss7_cdr():
             else:
                 current_status = STATUS_OK
 
-        # -------- ALERT (OK → FAIL) --------
+        # -------- ALERT --------
         if previous_status == STATUS_OK and current_status == STATUS_FAIL:
             subject = f"SS7 CDR ALERT | {server_name}"
             body = f"""
@@ -112,7 +168,6 @@ def monitor_ss7_cdr():
             state["last_alert_time"] = now
             save_state(state_file, state)
 
-        # -------- REPEATED FAIL (cooldown applies) --------
         elif previous_status == STATUS_FAIL and current_status == STATUS_FAIL:
             if last_alert_time is None or (now - last_alert_time) >= cooldown:
                 subject = f"SS7 CDR ALERT | {server_name} (Still Failing)"
@@ -131,7 +186,6 @@ def monitor_ss7_cdr():
             else:
                 print("[INFO] SS7 CDR issue ongoing, cooldown active.")
 
-        # -------- RESOLVED (FAIL → OK) --------
         elif previous_status == STATUS_FAIL and current_status == STATUS_OK:
             subject = f"RESOLVED | SS7 CDR Normal on {server_name}"
             body = f"""
@@ -152,4 +206,3 @@ def monitor_ss7_cdr():
 
 if __name__ == "__main__":
     monitor_ss7_cdr()
-

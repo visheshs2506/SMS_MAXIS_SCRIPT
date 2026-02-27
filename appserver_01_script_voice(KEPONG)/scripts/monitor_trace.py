@@ -3,6 +3,7 @@ import os
 import time
 import json
 import glob
+import psycopg2
 from datetime import datetime
 from pathlib import Path
 
@@ -35,6 +36,56 @@ def save_state(state_file, state):
         json.dump(state, f, indent=2)
 
 
+def is_ss7_traffic_active(config):
+    """
+    Checks whether SS7 traffic is active using MAX(timestamp_column)
+    from public.ss7_log.
+    """
+    try:
+        traffic_conf = config.get("traffic_monitor", {}).get("ss7")
+
+        if not traffic_conf:
+            print("[ERROR] traffic_monitor.ss7 missing in config.yaml")
+            return False
+
+        conn = psycopg2.connect(
+            host=traffic_conf["db_host"],
+            port=traffic_conf["db_port"],
+            dbname=traffic_conf["db_name"],
+            user=traffic_conf["db_user"],
+            password=traffic_conf["db_password"],
+            connect_timeout=5
+        )
+
+        query = f"""
+            SELECT EXTRACT(EPOCH FROM (NOW() - MAX({traffic_conf['timestamp_column']})))
+            FROM {traffic_conf['table']};
+        """
+
+        with conn.cursor() as cur:
+            cur.execute(query)
+            result = cur.fetchone()
+
+        conn.close()
+
+        if not result or result[0] is None:
+            print("[INFO] No SS7 records found in DB.")
+            return False
+
+        seconds_diff = result[0]
+        threshold = traffic_conf["inactivity_threshold_seconds"]
+
+        if seconds_diff <= threshold:
+            return True
+        else:
+            print(f"[INFO] SS7 traffic inactive (last record {int(seconds_diff)} seconds ago).")
+            return False
+
+    except Exception as e:
+        print(f"[ERROR] SS7 traffic check failed: {e}")
+        return False
+
+
 def monitor_trace():
     print("[INFO] Trace Monitoring started...")
 
@@ -45,6 +96,12 @@ def monitor_trace():
         if not trace_conf:
             print("[ERROR] trace_monitor section missing in config.yaml")
             time.sleep(10)
+            continue
+
+        # -------- TRAFFIC CHECK --------
+        if not is_ss7_traffic_active(config):
+            print("[INFO] SS7 traffic not active on this site. Skipping trace monitoring.")
+            time.sleep(trace_conf["check_interval_seconds"])
             continue
 
         # -------- STRICT CONFIG --------
@@ -64,7 +121,6 @@ def monitor_trace():
         last_alert_time = state["last_alert_time"]
         file_state = state.get("files", {})
 
-        # ---- Remove stale rotated files ----
         file_state = {
             f: v for f, v in file_state.items()
             if os.path.exists(f)
@@ -78,7 +134,6 @@ def monitor_trace():
         current_status = STATUS_OK
         reason = ""
 
-        # -------- FILE COUNT CHECK --------
         if not matched_files:
             current_status = STATUS_FAIL
             reason = "No trace files found"
@@ -160,4 +215,3 @@ def monitor_trace():
 
 if __name__ == "__main__":
     monitor_trace()
-

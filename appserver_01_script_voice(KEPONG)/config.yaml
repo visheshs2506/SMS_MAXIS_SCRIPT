@@ -24,13 +24,32 @@ mail_report:
     - "vijeth.raaghu@gtstechlabs.com"
     - "suresh.c@gtstechlabs.com"
 
+traffic_monitor:
+  smpp:
+    db_host: "172.19.133.169"
+    db_port: 5432
+    db_name: "voice_armour_firewall"
+    db_user: "postgres"
+    db_password: "postgres"
+    table: "transaction_schema.txn_sip_response"
+    timestamp_column: "create_datetime"
+    inactivity_threshold_seconds: 120
+
+  ss7:
+    db_host: "172.19.133.169"
+    db_port: 5432
+    db_name: "voice_armour_firewall"
+    db_user: "postgres"
+    db_password: "postgres"
+    table: "transaction_schema.txn_ss7_cdr_log"
+    timestamp_column: "ss7_cdr_log_time_stamp"
+    inactivity_threshold_seconds: 120
 
 ping_check:
   target_ip: "172.19.133.167"
   cooldown_seconds: 1800
   server_name: "Maxis VOICE KEPONG App Server 01"
   state_file_dir: "/data/appserver_01_script/state"
-
 
 ss7_connection_check:
   expected:
@@ -41,7 +60,6 @@ ss7_connection_check:
   working_dir: "/usr/local/aculab/v6"
   cooldown_seconds: 300
   state_file_dir: "/data/appserver_01_script/state"
-
 
 uptime_check:
   threshold_minutes: 8
@@ -82,7 +100,6 @@ sip_monitor:
   instances:
     SIP:
       path: "/data/SIP/Logs/ARMOUR_SIP_"
-
 
 ha_monitor:
   server_name: "Maxis VOICE KEPONG App Server 01"
